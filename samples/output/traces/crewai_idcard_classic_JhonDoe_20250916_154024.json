@@ -1,0 +1,263 @@
+{
+  "processing_session": {
+    "session_id": "session_20250916_154024_crewai",
+    "framework": "crewai",
+    "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+    "start_time": "2025-09-16T12:38:42Z",
+    "end_time": "2025-09-16T12:40:24Z",
+    "total_processing_time_ms": 102006.47521018982
+  },
+  "processing_pipeline": [
+    {
+      "step": "classification",
+      "step_number": 1,
+      "agent": "crewai_classification_agent",
+      "start_time": "2025-09-16T12:38:42.fZ",
+      "end_time": "2025-09-16T12:38:42.fZ",
+      "duration_ms": 0.0,
+      "status": "completed",
+      "result_summary": "Classified as unknown with confidence 0.3"
+    },
+    {
+      "step": "extraction",
+      "step_number": 2,
+      "agent": "crewai_extraction_agent",
+      "start_time": "2025-09-16T12:38:42.fZ",
+      "end_time": "2025-09-16T12:38:42.fZ",
+      "duration_ms": 0.0,
+      "status": "completed",
+      "result_summary": "Extracted 1 fields"
+    },
+    {
+      "step": "accuracy_assessment",
+      "step_number": 3,
+      "agent": "crewai_accuracy_agent",
+      "start_time": "2025-09-16T12:38:42.fZ",
+      "end_time": "2025-09-16T12:38:42.fZ",
+      "duration_ms": 0.0,
+      "status": "completed",
+      "result_summary": "Overall accuracy 0.80"
+    },
+    {
+      "step": "final_decision",
+      "step_number": 4,
+      "agent": "crewai_final_decision_agent",
+      "start_time": "2025-09-16T12:38:42.fZ",
+      "end_time": "2025-09-16T12:40:24.fZ",
+      "duration_ms": 102006.47521018982,
+      "status": "completed",
+      "result_summary": "Processing completed successfully"
+    }
+  ],
+  "step_details": {
+    "classification": {
+      "classification": {
+        "label": "unknown",
+        "confidence": 0.3
+      },
+      "metadata": {
+        "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+        "processing_time": 0.0
+      }
+    },
+    "extraction": {
+      "fields": [
+        {
+          "name": "extracted_text",
+          "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+        }
+      ],
+      "metadata": {
+        "processing_time": 0.0
+      }
+    },
+    "accuracy": {
+      "classification": 0.8,
+      "extraction": {
+        "overall": 0.8
+      },
+      "overall": 0.8,
+      "metadata": {
+        "processing_time": 0.0
+      }
+    }
+  },
+  "final_results": {
+    "classification": {
+      "classification": {
+        "label": "unknown",
+        "confidence": 0.3
+      },
+      "metadata": {
+        "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+        "processing_time": 0.0
+      }
+    },
+    "extraction": {
+      "fields": [
+        {
+          "name": "extracted_text",
+          "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+        }
+      ],
+      "metadata": {
+        "processing_time": 0.0
+      }
+    },
+    "accuracy": {
+      "classification": 0.8,
+      "extraction": {
+        "overall": 0.8
+      },
+      "overall": 0.8,
+      "metadata": {
+        "processing_time": 0.0
+      }
+    },
+    "final_decision": {
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "implementation": "crewai",
+      "classification": {
+        "label": "unknown",
+        "confidence": 0.3
+      },
+      "extraction": [
+        {
+          "name": "extracted_text",
+          "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+        }
+      ],
+      "accuracy": {
+        "classification": 0.8,
+        "extraction": {
+          "overall": 0.8
+        },
+        "overall": 0.8,
+        "metadata": {
+          "processing_time": 0.0
+        }
+      },
+      "timing": {
+        "total_processing_time": 102.00647521018982,
+        "individual_steps": {
+          "classification_time": 0.0,
+          "extraction_time": 0.0,
+          "accuracy_time": 0.0
+        },
+        "framework_processing_time": 102.00613713264465
+      },
+      "timestamp": "2025-09-16 15:40:24",
+      "processing_pipeline": [
+        {
+          "step": "classification",
+          "step_number": 1,
+          "agent": "crewai_classification_agent",
+          "start_time": "2025-09-16T12:38:42.fZ",
+          "end_time": "2025-09-16T12:38:42.fZ",
+          "duration_ms": 0.0,
+          "status": "completed",
+          "result_summary": "Classified as unknown with confidence 0.3"
+        },
+        {
+          "step": "extraction",
+          "step_number": 2,
+          "agent": "crewai_extraction_agent",
+          "start_time": "2025-09-16T12:38:42.fZ",
+          "end_time": "2025-09-16T12:38:42.fZ",
+          "duration_ms": 0.0,
+          "status": "completed",
+          "result_summary": "Extracted 1 fields"
+        },
+        {
+          "step": "accuracy_assessment",
+          "step_number": 3,
+          "agent": "crewai_accuracy_agent",
+          "start_time": "2025-09-16T12:38:42.fZ",
+          "end_time": "2025-09-16T12:38:42.fZ",
+          "duration_ms": 0.0,
+          "status": "completed",
+          "result_summary": "Overall accuracy 0.80"
+        },
+        {
+          "step": "final_decision",
+          "step_number": 4,
+          "agent": "crewai_final_decision_agent",
+          "start_time": "2025-09-16T12:38:42.fZ",
+          "end_time": "2025-09-16T12:40:24.fZ",
+          "duration_ms": 102006.47521018982,
+          "status": "completed",
+          "result_summary": "Processing completed successfully"
+        }
+      ],
+      "complete_trace_route": {
+        "processing_pipeline": [
+          {
+            "step": "classification",
+            "step_number": 1,
+            "agent": "crewai_classification_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:38:42.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Classified as unknown with confidence 0.3"
+          },
+          {
+            "step": "extraction",
+            "step_number": 2,
+            "agent": "crewai_extraction_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:38:42.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Extracted 1 fields"
+          },
+          {
+            "step": "accuracy_assessment",
+            "step_number": 3,
+            "agent": "crewai_accuracy_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:38:42.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Overall accuracy 0.80"
+          },
+          {
+            "step": "final_decision",
+            "step_number": 4,
+            "agent": "crewai_final_decision_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:40:24.fZ",
+            "duration_ms": 102006.47521018982,
+            "status": "completed",
+            "result_summary": "Processing completed successfully"
+          }
+        ],
+        "total_processing_time_ms": 102006.47521018982,
+        "framework_used": "crewai",
+        "mcp_server_interactions": 4,
+        "processing_session_id": "session_1758026322454_crewai"
+      }
+    }
+  },
+  "performance_metrics": {
+    "total_time": 102.00647521018982,
+    "framework_time": 102.00613713264465,
+    "step_timings": {
+      "classification_time": 0.0,
+      "extraction_time": 0.0,
+      "accuracy_time": 0.0
+    },
+    "success_rate": 1.0
+  },
+  "quality_assessment": {
+    "overall_accuracy": 0.8,
+    "confidence": 0.3,
+    "document_type": "unknown",
+    "processing_status": "success"
+  },
+  "export_metadata": {
+    "export_timestamp": "2025-09-16T15:40:24Z",
+    "trace_version": "2.1.0",
+    "processor_version": "enhanced"
+  }
+}

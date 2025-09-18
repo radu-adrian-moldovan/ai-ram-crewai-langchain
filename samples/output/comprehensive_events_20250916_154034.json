@@ -1,0 +1,1763 @@
+{
+  "session_info": {
+    "session_id": "36d257a3-9aeb-48c9-afaa-2127b2f17465",
+    "start_time": "2025-09-16 12:38:42.345451+00:00",
+    "total_events": 12,
+    "session_duration_seconds": 112.226381,
+    "events_by_implementation": {
+      "crewai": 6,
+      "langchain": 6
+    }
+  },
+  "events": [
+    {
+      "event_id": "96d1921e-4509-4b20-b4c2-f6ce5f177a53",
+      "timestamp": "2025-09-16T12:38:42.454231+00:00",
+      "implementation": "crewai",
+      "event_type": "processing_start",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "processing",
+      "duration_ms": null,
+      "success": true,
+      "error_message": null,
+      "classification_result": null,
+      "extraction_result": null,
+      "accuracy_result": null,
+      "final_decision_result": null,
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {
+        "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png"
+      }
+    },
+    {
+      "event_id": "251404c3-d59b-45d0-9d44-4aaac0765008",
+      "timestamp": "2025-09-16T12:38:47.705163+00:00",
+      "implementation": "langchain",
+      "event_type": "processing_start",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "processing",
+      "duration_ms": null,
+      "success": true,
+      "error_message": null,
+      "classification_result": null,
+      "extraction_result": null,
+      "accuracy_result": null,
+      "final_decision_result": null,
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {
+        "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png"
+      }
+    },
+    {
+      "event_id": "9dbf10bd-3c2b-420d-8299-0f5d3e6b5301",
+      "timestamp": "2025-09-16T12:40:24.460573+00:00",
+      "implementation": "crewai",
+      "event_type": "classification_end",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "classification",
+      "duration_ms": null,
+      "success": true,
+      "error_message": null,
+      "classification_result": {
+        "document_type": "unknown",
+        "confidence": 0.3,
+        "reasoning": "Classified as unknown"
+      },
+      "extraction_result": null,
+      "accuracy_result": null,
+      "final_decision_result": null,
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {
+        "document_type": "unknown",
+        "confidence": 0.3,
+        "reasoning": "Classified as unknown"
+      }
+    },
+    {
+      "event_id": "8a0e7969-871d-4500-982e-2c52d4a3527d",
+      "timestamp": "2025-09-16T12:40:24.460639+00:00",
+      "implementation": "crewai",
+      "event_type": "extraction_end",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "extraction",
+      "duration_ms": null,
+      "success": true,
+      "error_message": null,
+      "classification_result": null,
+      "extraction_result": {
+        "extracted_fields": [
+          {
+            "field_name": "extracted_text",
+            "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}",
+            "confidence": 0.8
+          }
+        ],
+        "total_fields_found": 1
+      },
+      "accuracy_result": null,
+      "final_decision_result": null,
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {
+        "extracted_text": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+      }
+    },
+    {
+      "event_id": "f6ca001e-7ca4-4775-8057-bfafd7b21fa1",
+      "timestamp": "2025-09-16T12:40:24.460669+00:00",
+      "implementation": "crewai",
+      "event_type": "accuracy_assessment_end",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "accuracy_assessment",
+      "duration_ms": null,
+      "success": true,
+      "error_message": null,
+      "classification_result": null,
+      "extraction_result": null,
+      "accuracy_result": {
+        "overall_accuracy": 0.8,
+        "field_accuracies": {
+          "overall": 0.8
+        },
+        "issues_found": [],
+        "recommendations": []
+      },
+      "final_decision_result": null,
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {
+        "overall_accuracy": 0.8,
+        "field_accuracies": {
+          "overall": 0.8
+        }
+      }
+    },
+    {
+      "event_id": "037599ff-d2d3-4901-a00f-c8fbbf0f9dc1",
+      "timestamp": "2025-09-16T12:40:24.462045+00:00",
+      "implementation": "crewai",
+      "event_type": "processing_end",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "enhanced_processing_complete",
+      "duration_ms": null,
+      "success": true,
+      "error_message": null,
+      "classification_result": null,
+      "extraction_result": null,
+      "accuracy_result": null,
+      "final_decision_result": null,
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {
+        "enhanced_result": {
+          "status": "success",
+          "total_processing_time": 102.00647521018982,
+          "framework_processing_time": 102.00613713264465,
+          "document_type": "unknown",
+          "overall_accuracy": 0.8,
+          "confidence": 0.3,
+          "implementation": "crewai",
+          "step_details": {
+            "classification": {
+              "classification": {
+                "label": "unknown",
+                "confidence": 0.3
+              },
+              "metadata": {
+                "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+                "processing_time": 0.0
+              }
+            },
+            "extraction": {
+              "fields": [
+                {
+                  "name": "extracted_text",
+                  "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+                }
+              ],
+              "metadata": {
+                "processing_time": 0.0
+              }
+            },
+            "accuracy": {
+              "classification": 0.8,
+              "extraction": {
+                "overall": 0.8
+              },
+              "overall": 0.8,
+              "metadata": {
+                "processing_time": 0.0
+              }
+            }
+          },
+          "timing_details": {
+            "classification_time": 0.0,
+            "extraction_time": 0.0,
+            "accuracy_time": 0.0
+          },
+          "final_decision_json": {
+            "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+            "implementation": "crewai",
+            "classification": {
+              "label": "unknown",
+              "confidence": 0.3
+            },
+            "extraction": [
+              {
+                "name": "extracted_text",
+                "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+              }
+            ],
+            "accuracy": {
+              "classification": 0.8,
+              "extraction": {
+                "overall": 0.8
+              },
+              "overall": 0.8,
+              "metadata": {
+                "processing_time": 0.0
+              }
+            },
+            "timing": {
+              "total_processing_time": 102.00647521018982,
+              "individual_steps": {
+                "classification_time": 0.0,
+                "extraction_time": 0.0,
+                "accuracy_time": 0.0
+              },
+              "framework_processing_time": 102.00613713264465
+            },
+            "timestamp": "2025-09-16 15:40:24",
+            "processing_pipeline": [
+              {
+                "step": "classification",
+                "step_number": 1,
+                "agent": "crewai_classification_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:38:42.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Classified as unknown with confidence 0.3"
+              },
+              {
+                "step": "extraction",
+                "step_number": 2,
+                "agent": "crewai_extraction_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:38:42.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Extracted 1 fields"
+              },
+              {
+                "step": "accuracy_assessment",
+                "step_number": 3,
+                "agent": "crewai_accuracy_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:38:42.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Overall accuracy 0.80"
+              },
+              {
+                "step": "final_decision",
+                "step_number": 4,
+                "agent": "crewai_final_decision_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:40:24.fZ",
+                "duration_ms": 102006.47521018982,
+                "status": "completed",
+                "result_summary": "Processing completed successfully"
+              }
+            ],
+            "complete_trace_route": {
+              "processing_pipeline": [
+                {
+                  "step": "classification",
+                  "step_number": 1,
+                  "agent": "crewai_classification_agent",
+                  "start_time": "2025-09-16T12:38:42.fZ",
+                  "end_time": "2025-09-16T12:38:42.fZ",
+                  "duration_ms": 0.0,
+                  "status": "completed",
+                  "result_summary": "Classified as unknown with confidence 0.3"
+                },
+                {
+                  "step": "extraction",
+                  "step_number": 2,
+                  "agent": "crewai_extraction_agent",
+                  "start_time": "2025-09-16T12:38:42.fZ",
+                  "end_time": "2025-09-16T12:38:42.fZ",
+                  "duration_ms": 0.0,
+                  "status": "completed",
+                  "result_summary": "Extracted 1 fields"
+                },
+                {
+                  "step": "accuracy_assessment",
+                  "step_number": 3,
+                  "agent": "crewai_accuracy_agent",
+                  "start_time": "2025-09-16T12:38:42.fZ",
+                  "end_time": "2025-09-16T12:38:42.fZ",
+                  "duration_ms": 0.0,
+                  "status": "completed",
+                  "result_summary": "Overall accuracy 0.80"
+                },
+                {
+                  "step": "final_decision",
+                  "step_number": 4,
+                  "agent": "crewai_final_decision_agent",
+                  "start_time": "2025-09-16T12:38:42.fZ",
+                  "end_time": "2025-09-16T12:40:24.fZ",
+                  "duration_ms": 102006.47521018982,
+                  "status": "completed",
+                  "result_summary": "Processing completed successfully"
+                }
+              ],
+              "total_processing_time_ms": 102006.47521018982,
+              "framework_used": "crewai",
+              "mcp_server_interactions": 4,
+              "processing_session_id": "session_1758026322454_crewai"
+            }
+          },
+          "classification_json": {
+            "classification": {
+              "label": "unknown",
+              "confidence": 0.3
+            },
+            "metadata": {
+              "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+              "processing_time": 0.0
+            }
+          },
+          "extraction_json": {
+            "fields": [
+              {
+                "name": "extracted_text",
+                "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+              }
+            ],
+            "metadata": {
+              "processing_time": 0.0
+            }
+          },
+          "accuracy_json": {
+            "classification": 0.8,
+            "extraction": {
+              "overall": 0.8
+            },
+            "overall": 0.8,
+            "metadata": {
+              "processing_time": 0.0
+            }
+          },
+          "processing_pipeline": [
+            {
+              "step": "classification",
+              "step_number": 1,
+              "agent": "crewai_classification_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Classified as unknown with confidence 0.3"
+            },
+            {
+              "step": "extraction",
+              "step_number": 2,
+              "agent": "crewai_extraction_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Extracted 1 fields"
+            },
+            {
+              "step": "accuracy_assessment",
+              "step_number": 3,
+              "agent": "crewai_accuracy_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Overall accuracy 0.80"
+            },
+            {
+              "step": "final_decision",
+              "step_number": 4,
+              "agent": "crewai_final_decision_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:40:24.fZ",
+              "duration_ms": 102006.47521018982,
+              "status": "completed",
+              "result_summary": "Processing completed successfully"
+            }
+          ],
+          "complete_trace_route": {
+            "processing_pipeline": [
+              {
+                "step": "classification",
+                "step_number": 1,
+                "agent": "crewai_classification_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:38:42.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Classified as unknown with confidence 0.3"
+              },
+              {
+                "step": "extraction",
+                "step_number": 2,
+                "agent": "crewai_extraction_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:38:42.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Extracted 1 fields"
+              },
+              {
+                "step": "accuracy_assessment",
+                "step_number": 3,
+                "agent": "crewai_accuracy_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:38:42.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Overall accuracy 0.80"
+              },
+              {
+                "step": "final_decision",
+                "step_number": 4,
+                "agent": "crewai_final_decision_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:40:24.fZ",
+                "duration_ms": 102006.47521018982,
+                "status": "completed",
+                "result_summary": "Processing completed successfully"
+              }
+            ],
+            "total_processing_time_ms": 102006.47521018982,
+            "framework_used": "crewai",
+            "mcp_server_interactions": 4,
+            "processing_session_id": "session_1758026322454_crewai"
+          }
+        },
+        "processing_pipeline": [
+          {
+            "step": "classification",
+            "step_number": 1,
+            "agent": "crewai_classification_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:38:42.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Classified as unknown with confidence 0.3"
+          },
+          {
+            "step": "extraction",
+            "step_number": 2,
+            "agent": "crewai_extraction_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:38:42.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Extracted 1 fields"
+          },
+          {
+            "step": "accuracy_assessment",
+            "step_number": 3,
+            "agent": "crewai_accuracy_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:38:42.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Overall accuracy 0.80"
+          },
+          {
+            "step": "final_decision",
+            "step_number": 4,
+            "agent": "crewai_final_decision_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:40:24.fZ",
+            "duration_ms": 102006.47521018982,
+            "status": "completed",
+            "result_summary": "Processing completed successfully"
+          }
+        ],
+        "complete_trace_route": {
+          "processing_pipeline": [
+            {
+              "step": "classification",
+              "step_number": 1,
+              "agent": "crewai_classification_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Classified as unknown with confidence 0.3"
+            },
+            {
+              "step": "extraction",
+              "step_number": 2,
+              "agent": "crewai_extraction_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Extracted 1 fields"
+            },
+            {
+              "step": "accuracy_assessment",
+              "step_number": 3,
+              "agent": "crewai_accuracy_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Overall accuracy 0.80"
+            },
+            {
+              "step": "final_decision",
+              "step_number": 4,
+              "agent": "crewai_final_decision_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:40:24.fZ",
+              "duration_ms": 102006.47521018982,
+              "status": "completed",
+              "result_summary": "Processing completed successfully"
+            }
+          ],
+          "total_processing_time_ms": 102006.47521018982,
+          "framework_used": "crewai",
+          "mcp_server_interactions": 4,
+          "processing_session_id": "session_1758026322454_crewai"
+        },
+        "step_details": {
+          "classification": {
+            "classification": {
+              "label": "unknown",
+              "confidence": 0.3
+            },
+            "metadata": {
+              "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+              "processing_time": 0.0
+            }
+          },
+          "extraction": {
+            "fields": [
+              {
+                "name": "extracted_text",
+                "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+              }
+            ],
+            "metadata": {
+              "processing_time": 0.0
+            }
+          },
+          "accuracy": {
+            "classification": 0.8,
+            "extraction": {
+              "overall": 0.8
+            },
+            "overall": 0.8,
+            "metadata": {
+              "processing_time": 0.0
+            }
+          }
+        },
+        "timing_details": {
+          "classification_time": 0.0,
+          "extraction_time": 0.0,
+          "accuracy_time": 0.0
+        },
+        "classification_json": {
+          "classification": {
+            "label": "unknown",
+            "confidence": 0.3
+          },
+          "metadata": {
+            "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+            "processing_time": 0.0
+          }
+        },
+        "extraction_json": {
+          "fields": [
+            {
+              "name": "extracted_text",
+              "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+            }
+          ],
+          "metadata": {
+            "processing_time": 0.0
+          }
+        },
+        "accuracy_json": {
+          "classification": 0.8,
+          "extraction": {
+            "overall": 0.8
+          },
+          "overall": 0.8,
+          "metadata": {
+            "processing_time": 0.0
+          }
+        },
+        "final_decision_json": {
+          "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+          "implementation": "crewai",
+          "classification": {
+            "label": "unknown",
+            "confidence": 0.3
+          },
+          "extraction": [
+            {
+              "name": "extracted_text",
+              "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+            }
+          ],
+          "accuracy": {
+            "classification": 0.8,
+            "extraction": {
+              "overall": 0.8
+            },
+            "overall": 0.8,
+            "metadata": {
+              "processing_time": 0.0
+            }
+          },
+          "timing": {
+            "total_processing_time": 102.00647521018982,
+            "individual_steps": {
+              "classification_time": 0.0,
+              "extraction_time": 0.0,
+              "accuracy_time": 0.0
+            },
+            "framework_processing_time": 102.00613713264465
+          },
+          "timestamp": "2025-09-16 15:40:24",
+          "processing_pipeline": [
+            {
+              "step": "classification",
+              "step_number": 1,
+              "agent": "crewai_classification_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Classified as unknown with confidence 0.3"
+            },
+            {
+              "step": "extraction",
+              "step_number": 2,
+              "agent": "crewai_extraction_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Extracted 1 fields"
+            },
+            {
+              "step": "accuracy_assessment",
+              "step_number": 3,
+              "agent": "crewai_accuracy_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Overall accuracy 0.80"
+            },
+            {
+              "step": "final_decision",
+              "step_number": 4,
+              "agent": "crewai_final_decision_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:40:24.fZ",
+              "duration_ms": 102006.47521018982,
+              "status": "completed",
+              "result_summary": "Processing completed successfully"
+            }
+          ],
+          "complete_trace_route": {
+            "processing_pipeline": [
+              {
+                "step": "classification",
+                "step_number": 1,
+                "agent": "crewai_classification_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:38:42.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Classified as unknown with confidence 0.3"
+              },
+              {
+                "step": "extraction",
+                "step_number": 2,
+                "agent": "crewai_extraction_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:38:42.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Extracted 1 fields"
+              },
+              {
+                "step": "accuracy_assessment",
+                "step_number": 3,
+                "agent": "crewai_accuracy_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:38:42.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Overall accuracy 0.80"
+              },
+              {
+                "step": "final_decision",
+                "step_number": 4,
+                "agent": "crewai_final_decision_agent",
+                "start_time": "2025-09-16T12:38:42.fZ",
+                "end_time": "2025-09-16T12:40:24.fZ",
+                "duration_ms": 102006.47521018982,
+                "status": "completed",
+                "result_summary": "Processing completed successfully"
+              }
+            ],
+            "total_processing_time_ms": 102006.47521018982,
+            "framework_used": "crewai",
+            "mcp_server_interactions": 4,
+            "processing_session_id": "session_1758026322454_crewai"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "6014f8e5-b9f7-4fce-9520-9b29641ae528",
+      "timestamp": "2025-09-16T12:40:24.462069+00:00",
+      "implementation": "crewai",
+      "event_type": "processing_end",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "processing",
+      "duration_ms": 102007.826,
+      "success": true,
+      "error_message": null,
+      "classification_result": {
+        "classification": {
+          "label": "unknown",
+          "confidence": 0.3
+        },
+        "metadata": {
+          "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+          "processing_time": 0.0
+        }
+      },
+      "extraction_result": {
+        "fields": [
+          {
+            "name": "extracted_text",
+            "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+          }
+        ],
+        "metadata": {
+          "processing_time": 0.0
+        }
+      },
+      "accuracy_result": {
+        "classification": 0.8,
+        "extraction": {
+          "overall": 0.8
+        },
+        "overall": 0.8,
+        "metadata": {
+          "processing_time": 0.0
+        }
+      },
+      "final_decision_result": {
+        "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+        "implementation": "crewai",
+        "classification": {
+          "label": "unknown",
+          "confidence": 0.3
+        },
+        "extraction": [
+          {
+            "name": "extracted_text",
+            "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.98\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.95\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.92\n      },\n      {\n        \"name\": \"Phone Number\",\n        \"value\": \"123-456-7890\",\n        \"confidence\": 0.90\n      },\n      {\n        \"name\": \"ID Number\",\n        \"value\": \"123456789\",\n        \"confidence\": 0.88\n      },\n      {\n        \"name\": \"Expiration Date\",\n        \"value\": \"2025-01-01\",\n        \"confidence\": 0.85\n      },\n      {\n        \"name\": \"ID Type\",\n        \"value\": \"Driver's License\",\n        \"confidence\": 0.80\n      }\n    ],\n    \"total_fields_extracted\": 7,\n    \"extraction_summary\": {\n      \"accuracy\": 0.92,\n      \"processing_time\": 0.12,\n      \"memory_usage\": 0.05\n    }\n  },\n  \"metadata\": {\n    \"agent_id\": \"field_extraction_agent\",\n    \"framework\": \"crewai\",\n    \"document_type\": \"idcard_classic\",\n    \"mcp_server_response\": {\n      \"status\": 200,\n      \"message\": \"Extraction successful\"\n    }\n  },\n  \"trace\": {\n    \"step\": \"extraction\",\n    \"step_number\": 2,\n    \"total_steps\": 4,\n    \"previous_step\": \"classification\",\n    \"next_step\": \"accuracy_assessment\"\n  }\n}"
+          }
+        ],
+        "accuracy": {
+          "classification": 0.8,
+          "extraction": {
+            "overall": 0.8
+          },
+          "overall": 0.8,
+          "metadata": {
+            "processing_time": 0.0
+          }
+        },
+        "timing": {
+          "total_processing_time": 102.00647521018982,
+          "individual_steps": {
+            "classification_time": 0.0,
+            "extraction_time": 0.0,
+            "accuracy_time": 0.0
+          },
+          "framework_processing_time": 102.00613713264465
+        },
+        "timestamp": "2025-09-16 15:40:24",
+        "processing_pipeline": [
+          {
+            "step": "classification",
+            "step_number": 1,
+            "agent": "crewai_classification_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:38:42.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Classified as unknown with confidence 0.3"
+          },
+          {
+            "step": "extraction",
+            "step_number": 2,
+            "agent": "crewai_extraction_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:38:42.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Extracted 1 fields"
+          },
+          {
+            "step": "accuracy_assessment",
+            "step_number": 3,
+            "agent": "crewai_accuracy_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:38:42.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Overall accuracy 0.80"
+          },
+          {
+            "step": "final_decision",
+            "step_number": 4,
+            "agent": "crewai_final_decision_agent",
+            "start_time": "2025-09-16T12:38:42.fZ",
+            "end_time": "2025-09-16T12:40:24.fZ",
+            "duration_ms": 102006.47521018982,
+            "status": "completed",
+            "result_summary": "Processing completed successfully"
+          }
+        ],
+        "complete_trace_route": {
+          "processing_pipeline": [
+            {
+              "step": "classification",
+              "step_number": 1,
+              "agent": "crewai_classification_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Classified as unknown with confidence 0.3"
+            },
+            {
+              "step": "extraction",
+              "step_number": 2,
+              "agent": "crewai_extraction_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Extracted 1 fields"
+            },
+            {
+              "step": "accuracy_assessment",
+              "step_number": 3,
+              "agent": "crewai_accuracy_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:38:42.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Overall accuracy 0.80"
+            },
+            {
+              "step": "final_decision",
+              "step_number": 4,
+              "agent": "crewai_final_decision_agent",
+              "start_time": "2025-09-16T12:38:42.fZ",
+              "end_time": "2025-09-16T12:40:24.fZ",
+              "duration_ms": 102006.47521018982,
+              "status": "completed",
+              "result_summary": "Processing completed successfully"
+            }
+          ],
+          "total_processing_time_ms": 102006.47521018982,
+          "framework_used": "crewai",
+          "mcp_server_interactions": 4,
+          "processing_session_id": "session_1758026322454_crewai"
+        }
+      },
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {}
+    },
+    {
+      "event_id": "b46e390f-0c9c-468c-a930-21ee78dc4806",
+      "timestamp": "2025-09-16T12:40:34.480775+00:00",
+      "implementation": "langchain",
+      "event_type": "classification_end",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "classification",
+      "duration_ms": null,
+      "success": true,
+      "error_message": null,
+      "classification_result": {
+        "document_type": "unknown",
+        "confidence": 0.3,
+        "reasoning": "Classified as unknown"
+      },
+      "extraction_result": null,
+      "accuracy_result": null,
+      "final_decision_result": null,
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {
+        "document_type": "unknown",
+        "confidence": 0.3,
+        "reasoning": "Classified as unknown"
+      }
+    },
+    {
+      "event_id": "236bf977-c8e4-424e-aef9-c3365689ddb2",
+      "timestamp": "2025-09-16T12:40:34.480809+00:00",
+      "implementation": "langchain",
+      "event_type": "extraction_end",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "extraction",
+      "duration_ms": null,
+      "success": true,
+      "error_message": null,
+      "classification_result": null,
+      "extraction_result": {
+        "extracted_fields": [
+          {
+            "field_name": "extracted_text",
+            "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}",
+            "confidence": 0.8
+          }
+        ],
+        "total_fields_found": 1
+      },
+      "accuracy_result": null,
+      "final_decision_result": null,
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {
+        "extracted_text": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+      }
+    },
+    {
+      "event_id": "fe69c055-5607-483a-b6cb-df1cb7f74c9f",
+      "timestamp": "2025-09-16T12:40:34.480827+00:00",
+      "implementation": "langchain",
+      "event_type": "accuracy_assessment_end",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "accuracy_assessment",
+      "duration_ms": null,
+      "success": true,
+      "error_message": null,
+      "classification_result": null,
+      "extraction_result": null,
+      "accuracy_result": {
+        "overall_accuracy": 0.8,
+        "field_accuracies": {
+          "overall": 0.8
+        },
+        "issues_found": [],
+        "recommendations": []
+      },
+      "final_decision_result": null,
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {
+        "overall_accuracy": 0.8,
+        "field_accuracies": {
+          "overall": 0.8
+        }
+      }
+    },
+    {
+      "event_id": "184a3428-dd70-47f8-9961-24eee97bdc2c",
+      "timestamp": "2025-09-16T12:40:34.481669+00:00",
+      "implementation": "langchain",
+      "event_type": "processing_end",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "enhanced_processing_complete",
+      "duration_ms": null,
+      "success": true,
+      "error_message": null,
+      "classification_result": null,
+      "extraction_result": null,
+      "accuracy_result": null,
+      "final_decision_result": null,
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {
+        "enhanced_result": {
+          "status": "success",
+          "total_processing_time": 106.77578282356262,
+          "framework_processing_time": 106.77550268173218,
+          "document_type": "unknown",
+          "overall_accuracy": 0.8,
+          "confidence": 0.3,
+          "implementation": "langchain",
+          "step_details": {
+            "classification": {
+              "classification": {
+                "label": "unknown",
+                "confidence": 0.3
+              },
+              "metadata": {
+                "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+                "processing_time": 0.0
+              }
+            },
+            "extraction": {
+              "fields": [
+                {
+                  "name": "extracted_text",
+                  "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+                }
+              ],
+              "metadata": {
+                "processing_time": 0.0
+              }
+            },
+            "accuracy": {
+              "classification": 0.8,
+              "extraction": {
+                "overall": 0.8
+              },
+              "overall": 0.8,
+              "metadata": {
+                "processing_time": 0.0
+              }
+            }
+          },
+          "timing_details": {
+            "classification_time": 0.0,
+            "extraction_time": 0.0,
+            "accuracy_time": 0.0
+          },
+          "final_decision_json": {
+            "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+            "implementation": "langchain",
+            "classification": {
+              "label": "unknown",
+              "confidence": 0.3
+            },
+            "extraction": [
+              {
+                "name": "extracted_text",
+                "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+              }
+            ],
+            "accuracy": {
+              "classification": 0.8,
+              "extraction": {
+                "overall": 0.8
+              },
+              "overall": 0.8,
+              "metadata": {
+                "processing_time": 0.0
+              }
+            },
+            "timing": {
+              "total_processing_time": 106.77578282356262,
+              "individual_steps": {
+                "classification_time": 0.0,
+                "extraction_time": 0.0,
+                "accuracy_time": 0.0
+              },
+              "framework_processing_time": 106.77550268173218
+            },
+            "timestamp": "2025-09-16 15:40:34",
+            "processing_pipeline": [
+              {
+                "step": "classification",
+                "step_number": 1,
+                "agent": "langchain_classification_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:38:47.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Classified as unknown with confidence 0.3"
+              },
+              {
+                "step": "extraction",
+                "step_number": 2,
+                "agent": "langchain_extraction_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:38:47.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Extracted 1 fields"
+              },
+              {
+                "step": "accuracy_assessment",
+                "step_number": 3,
+                "agent": "langchain_accuracy_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:38:47.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Overall accuracy 0.80"
+              },
+              {
+                "step": "final_decision",
+                "step_number": 4,
+                "agent": "langchain_final_decision_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:40:34.fZ",
+                "duration_ms": 106775.78282356262,
+                "status": "completed",
+                "result_summary": "Processing completed successfully"
+              }
+            ],
+            "complete_trace_route": {
+              "processing_pipeline": [
+                {
+                  "step": "classification",
+                  "step_number": 1,
+                  "agent": "langchain_classification_agent",
+                  "start_time": "2025-09-16T12:38:47.fZ",
+                  "end_time": "2025-09-16T12:38:47.fZ",
+                  "duration_ms": 0.0,
+                  "status": "completed",
+                  "result_summary": "Classified as unknown with confidence 0.3"
+                },
+                {
+                  "step": "extraction",
+                  "step_number": 2,
+                  "agent": "langchain_extraction_agent",
+                  "start_time": "2025-09-16T12:38:47.fZ",
+                  "end_time": "2025-09-16T12:38:47.fZ",
+                  "duration_ms": 0.0,
+                  "status": "completed",
+                  "result_summary": "Extracted 1 fields"
+                },
+                {
+                  "step": "accuracy_assessment",
+                  "step_number": 3,
+                  "agent": "langchain_accuracy_agent",
+                  "start_time": "2025-09-16T12:38:47.fZ",
+                  "end_time": "2025-09-16T12:38:47.fZ",
+                  "duration_ms": 0.0,
+                  "status": "completed",
+                  "result_summary": "Overall accuracy 0.80"
+                },
+                {
+                  "step": "final_decision",
+                  "step_number": 4,
+                  "agent": "langchain_final_decision_agent",
+                  "start_time": "2025-09-16T12:38:47.fZ",
+                  "end_time": "2025-09-16T12:40:34.fZ",
+                  "duration_ms": 106775.78282356262,
+                  "status": "completed",
+                  "result_summary": "Processing completed successfully"
+                }
+              ],
+              "total_processing_time_ms": 106775.78282356262,
+              "framework_used": "langchain",
+              "mcp_server_interactions": 4,
+              "processing_session_id": "session_1758026327705_langchain"
+            }
+          },
+          "classification_json": {
+            "classification": {
+              "label": "unknown",
+              "confidence": 0.3
+            },
+            "metadata": {
+              "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+              "processing_time": 0.0
+            }
+          },
+          "extraction_json": {
+            "fields": [
+              {
+                "name": "extracted_text",
+                "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+              }
+            ],
+            "metadata": {
+              "processing_time": 0.0
+            }
+          },
+          "accuracy_json": {
+            "classification": 0.8,
+            "extraction": {
+              "overall": 0.8
+            },
+            "overall": 0.8,
+            "metadata": {
+              "processing_time": 0.0
+            }
+          },
+          "processing_pipeline": [
+            {
+              "step": "classification",
+              "step_number": 1,
+              "agent": "langchain_classification_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Classified as unknown with confidence 0.3"
+            },
+            {
+              "step": "extraction",
+              "step_number": 2,
+              "agent": "langchain_extraction_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Extracted 1 fields"
+            },
+            {
+              "step": "accuracy_assessment",
+              "step_number": 3,
+              "agent": "langchain_accuracy_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Overall accuracy 0.80"
+            },
+            {
+              "step": "final_decision",
+              "step_number": 4,
+              "agent": "langchain_final_decision_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:40:34.fZ",
+              "duration_ms": 106775.78282356262,
+              "status": "completed",
+              "result_summary": "Processing completed successfully"
+            }
+          ],
+          "complete_trace_route": {
+            "processing_pipeline": [
+              {
+                "step": "classification",
+                "step_number": 1,
+                "agent": "langchain_classification_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:38:47.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Classified as unknown with confidence 0.3"
+              },
+              {
+                "step": "extraction",
+                "step_number": 2,
+                "agent": "langchain_extraction_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:38:47.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Extracted 1 fields"
+              },
+              {
+                "step": "accuracy_assessment",
+                "step_number": 3,
+                "agent": "langchain_accuracy_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:38:47.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Overall accuracy 0.80"
+              },
+              {
+                "step": "final_decision",
+                "step_number": 4,
+                "agent": "langchain_final_decision_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:40:34.fZ",
+                "duration_ms": 106775.78282356262,
+                "status": "completed",
+                "result_summary": "Processing completed successfully"
+              }
+            ],
+            "total_processing_time_ms": 106775.78282356262,
+            "framework_used": "langchain",
+            "mcp_server_interactions": 4,
+            "processing_session_id": "session_1758026327705_langchain"
+          }
+        },
+        "processing_pipeline": [
+          {
+            "step": "classification",
+            "step_number": 1,
+            "agent": "langchain_classification_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:38:47.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Classified as unknown with confidence 0.3"
+          },
+          {
+            "step": "extraction",
+            "step_number": 2,
+            "agent": "langchain_extraction_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:38:47.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Extracted 1 fields"
+          },
+          {
+            "step": "accuracy_assessment",
+            "step_number": 3,
+            "agent": "langchain_accuracy_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:38:47.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Overall accuracy 0.80"
+          },
+          {
+            "step": "final_decision",
+            "step_number": 4,
+            "agent": "langchain_final_decision_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:40:34.fZ",
+            "duration_ms": 106775.78282356262,
+            "status": "completed",
+            "result_summary": "Processing completed successfully"
+          }
+        ],
+        "complete_trace_route": {
+          "processing_pipeline": [
+            {
+              "step": "classification",
+              "step_number": 1,
+              "agent": "langchain_classification_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Classified as unknown with confidence 0.3"
+            },
+            {
+              "step": "extraction",
+              "step_number": 2,
+              "agent": "langchain_extraction_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Extracted 1 fields"
+            },
+            {
+              "step": "accuracy_assessment",
+              "step_number": 3,
+              "agent": "langchain_accuracy_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Overall accuracy 0.80"
+            },
+            {
+              "step": "final_decision",
+              "step_number": 4,
+              "agent": "langchain_final_decision_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:40:34.fZ",
+              "duration_ms": 106775.78282356262,
+              "status": "completed",
+              "result_summary": "Processing completed successfully"
+            }
+          ],
+          "total_processing_time_ms": 106775.78282356262,
+          "framework_used": "langchain",
+          "mcp_server_interactions": 4,
+          "processing_session_id": "session_1758026327705_langchain"
+        },
+        "step_details": {
+          "classification": {
+            "classification": {
+              "label": "unknown",
+              "confidence": 0.3
+            },
+            "metadata": {
+              "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+              "processing_time": 0.0
+            }
+          },
+          "extraction": {
+            "fields": [
+              {
+                "name": "extracted_text",
+                "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+              }
+            ],
+            "metadata": {
+              "processing_time": 0.0
+            }
+          },
+          "accuracy": {
+            "classification": 0.8,
+            "extraction": {
+              "overall": 0.8
+            },
+            "overall": 0.8,
+            "metadata": {
+              "processing_time": 0.0
+            }
+          }
+        },
+        "timing_details": {
+          "classification_time": 0.0,
+          "extraction_time": 0.0,
+          "accuracy_time": 0.0
+        },
+        "classification_json": {
+          "classification": {
+            "label": "unknown",
+            "confidence": 0.3
+          },
+          "metadata": {
+            "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+            "processing_time": 0.0
+          }
+        },
+        "extraction_json": {
+          "fields": [
+            {
+              "name": "extracted_text",
+              "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+            }
+          ],
+          "metadata": {
+            "processing_time": 0.0
+          }
+        },
+        "accuracy_json": {
+          "classification": 0.8,
+          "extraction": {
+            "overall": 0.8
+          },
+          "overall": 0.8,
+          "metadata": {
+            "processing_time": 0.0
+          }
+        },
+        "final_decision_json": {
+          "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+          "implementation": "langchain",
+          "classification": {
+            "label": "unknown",
+            "confidence": 0.3
+          },
+          "extraction": [
+            {
+              "name": "extracted_text",
+              "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+            }
+          ],
+          "accuracy": {
+            "classification": 0.8,
+            "extraction": {
+              "overall": 0.8
+            },
+            "overall": 0.8,
+            "metadata": {
+              "processing_time": 0.0
+            }
+          },
+          "timing": {
+            "total_processing_time": 106.77578282356262,
+            "individual_steps": {
+              "classification_time": 0.0,
+              "extraction_time": 0.0,
+              "accuracy_time": 0.0
+            },
+            "framework_processing_time": 106.77550268173218
+          },
+          "timestamp": "2025-09-16 15:40:34",
+          "processing_pipeline": [
+            {
+              "step": "classification",
+              "step_number": 1,
+              "agent": "langchain_classification_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Classified as unknown with confidence 0.3"
+            },
+            {
+              "step": "extraction",
+              "step_number": 2,
+              "agent": "langchain_extraction_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Extracted 1 fields"
+            },
+            {
+              "step": "accuracy_assessment",
+              "step_number": 3,
+              "agent": "langchain_accuracy_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Overall accuracy 0.80"
+            },
+            {
+              "step": "final_decision",
+              "step_number": 4,
+              "agent": "langchain_final_decision_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:40:34.fZ",
+              "duration_ms": 106775.78282356262,
+              "status": "completed",
+              "result_summary": "Processing completed successfully"
+            }
+          ],
+          "complete_trace_route": {
+            "processing_pipeline": [
+              {
+                "step": "classification",
+                "step_number": 1,
+                "agent": "langchain_classification_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:38:47.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Classified as unknown with confidence 0.3"
+              },
+              {
+                "step": "extraction",
+                "step_number": 2,
+                "agent": "langchain_extraction_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:38:47.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Extracted 1 fields"
+              },
+              {
+                "step": "accuracy_assessment",
+                "step_number": 3,
+                "agent": "langchain_accuracy_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:38:47.fZ",
+                "duration_ms": 0.0,
+                "status": "completed",
+                "result_summary": "Overall accuracy 0.80"
+              },
+              {
+                "step": "final_decision",
+                "step_number": 4,
+                "agent": "langchain_final_decision_agent",
+                "start_time": "2025-09-16T12:38:47.fZ",
+                "end_time": "2025-09-16T12:40:34.fZ",
+                "duration_ms": 106775.78282356262,
+                "status": "completed",
+                "result_summary": "Processing completed successfully"
+              }
+            ],
+            "total_processing_time_ms": 106775.78282356262,
+            "framework_used": "langchain",
+            "mcp_server_interactions": 4,
+            "processing_session_id": "session_1758026327705_langchain"
+          }
+        }
+      }
+    },
+    {
+      "event_id": "1c108356-753e-4897-81dd-34a0787b77b7",
+      "timestamp": "2025-09-16T12:40:34.481687+00:00",
+      "implementation": "langchain",
+      "event_type": "processing_end",
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "document_name": "idcard_classic_JhonDoe.png",
+      "stage": "processing",
+      "duration_ms": 106776.515,
+      "success": true,
+      "error_message": null,
+      "classification_result": {
+        "classification": {
+          "label": "unknown",
+          "confidence": 0.3
+        },
+        "metadata": {
+          "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+          "processing_time": 0.0
+        }
+      },
+      "extraction_result": {
+        "fields": [
+          {
+            "name": "extracted_text",
+            "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+          }
+        ],
+        "metadata": {
+          "processing_time": 0.0
+        }
+      },
+      "accuracy_result": {
+        "classification": 0.8,
+        "extraction": {
+          "overall": 0.8
+        },
+        "overall": 0.8,
+        "metadata": {
+          "processing_time": 0.0
+        }
+      },
+      "final_decision_result": {
+        "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+        "implementation": "langchain",
+        "classification": {
+          "label": "unknown",
+          "confidence": 0.3
+        },
+        "extraction": [
+          {
+            "name": "extracted_text",
+            "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+          }
+        ],
+        "accuracy": {
+          "classification": 0.8,
+          "extraction": {
+            "overall": 0.8
+          },
+          "overall": 0.8,
+          "metadata": {
+            "processing_time": 0.0
+          }
+        },
+        "timing": {
+          "total_processing_time": 106.77578282356262,
+          "individual_steps": {
+            "classification_time": 0.0,
+            "extraction_time": 0.0,
+            "accuracy_time": 0.0
+          },
+          "framework_processing_time": 106.77550268173218
+        },
+        "timestamp": "2025-09-16 15:40:34",
+        "processing_pipeline": [
+          {
+            "step": "classification",
+            "step_number": 1,
+            "agent": "langchain_classification_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:38:47.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Classified as unknown with confidence 0.3"
+          },
+          {
+            "step": "extraction",
+            "step_number": 2,
+            "agent": "langchain_extraction_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:38:47.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Extracted 1 fields"
+          },
+          {
+            "step": "accuracy_assessment",
+            "step_number": 3,
+            "agent": "langchain_accuracy_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:38:47.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Overall accuracy 0.80"
+          },
+          {
+            "step": "final_decision",
+            "step_number": 4,
+            "agent": "langchain_final_decision_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:40:34.fZ",
+            "duration_ms": 106775.78282356262,
+            "status": "completed",
+            "result_summary": "Processing completed successfully"
+          }
+        ],
+        "complete_trace_route": {
+          "processing_pipeline": [
+            {
+              "step": "classification",
+              "step_number": 1,
+              "agent": "langchain_classification_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Classified as unknown with confidence 0.3"
+            },
+            {
+              "step": "extraction",
+              "step_number": 2,
+              "agent": "langchain_extraction_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Extracted 1 fields"
+            },
+            {
+              "step": "accuracy_assessment",
+              "step_number": 3,
+              "agent": "langchain_accuracy_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:38:47.fZ",
+              "duration_ms": 0.0,
+              "status": "completed",
+              "result_summary": "Overall accuracy 0.80"
+            },
+            {
+              "step": "final_decision",
+              "step_number": 4,
+              "agent": "langchain_final_decision_agent",
+              "start_time": "2025-09-16T12:38:47.fZ",
+              "end_time": "2025-09-16T12:40:34.fZ",
+              "duration_ms": 106775.78282356262,
+              "status": "completed",
+              "result_summary": "Processing completed successfully"
+            }
+          ],
+          "total_processing_time_ms": 106775.78282356262,
+          "framework_used": "langchain",
+          "mcp_server_interactions": 4,
+          "processing_session_id": "session_1758026327705_langchain"
+        }
+      },
+      "memory_usage_mb": null,
+      "cpu_usage_percent": null,
+      "metadata": {}
+    }
+  ],
+  "export_timestamp": "2025-09-16T12:40:34.571861+00:00"
+}

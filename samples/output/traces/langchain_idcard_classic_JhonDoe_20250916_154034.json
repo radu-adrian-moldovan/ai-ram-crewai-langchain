@@ -1,0 +1,263 @@
+{
+  "processing_session": {
+    "session_id": "session_20250916_154034_langchain",
+    "framework": "langchain",
+    "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+    "start_time": "2025-09-16T12:38:47Z",
+    "end_time": "2025-09-16T12:40:34Z",
+    "total_processing_time_ms": 106775.78282356262
+  },
+  "processing_pipeline": [
+    {
+      "step": "classification",
+      "step_number": 1,
+      "agent": "langchain_classification_agent",
+      "start_time": "2025-09-16T12:38:47.fZ",
+      "end_time": "2025-09-16T12:38:47.fZ",
+      "duration_ms": 0.0,
+      "status": "completed",
+      "result_summary": "Classified as unknown with confidence 0.3"
+    },
+    {
+      "step": "extraction",
+      "step_number": 2,
+      "agent": "langchain_extraction_agent",
+      "start_time": "2025-09-16T12:38:47.fZ",
+      "end_time": "2025-09-16T12:38:47.fZ",
+      "duration_ms": 0.0,
+      "status": "completed",
+      "result_summary": "Extracted 1 fields"
+    },
+    {
+      "step": "accuracy_assessment",
+      "step_number": 3,
+      "agent": "langchain_accuracy_agent",
+      "start_time": "2025-09-16T12:38:47.fZ",
+      "end_time": "2025-09-16T12:38:47.fZ",
+      "duration_ms": 0.0,
+      "status": "completed",
+      "result_summary": "Overall accuracy 0.80"
+    },
+    {
+      "step": "final_decision",
+      "step_number": 4,
+      "agent": "langchain_final_decision_agent",
+      "start_time": "2025-09-16T12:38:47.fZ",
+      "end_time": "2025-09-16T12:40:34.fZ",
+      "duration_ms": 106775.78282356262,
+      "status": "completed",
+      "result_summary": "Processing completed successfully"
+    }
+  ],
+  "step_details": {
+    "classification": {
+      "classification": {
+        "label": "unknown",
+        "confidence": 0.3
+      },
+      "metadata": {
+        "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+        "processing_time": 0.0
+      }
+    },
+    "extraction": {
+      "fields": [
+        {
+          "name": "extracted_text",
+          "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+        }
+      ],
+      "metadata": {
+        "processing_time": 0.0
+      }
+    },
+    "accuracy": {
+      "classification": 0.8,
+      "extraction": {
+        "overall": 0.8
+      },
+      "overall": 0.8,
+      "metadata": {
+        "processing_time": 0.0
+      }
+    }
+  },
+  "final_results": {
+    "classification": {
+      "classification": {
+        "label": "unknown",
+        "confidence": 0.3
+      },
+      "metadata": {
+        "image_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+        "processing_time": 0.0
+      }
+    },
+    "extraction": {
+      "fields": [
+        {
+          "name": "extracted_text",
+          "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+        }
+      ],
+      "metadata": {
+        "processing_time": 0.0
+      }
+    },
+    "accuracy": {
+      "classification": 0.8,
+      "extraction": {
+        "overall": 0.8
+      },
+      "overall": 0.8,
+      "metadata": {
+        "processing_time": 0.0
+      }
+    },
+    "final_decision": {
+      "document_path": "samples/input/idcard_classic/idcard_classic_JhonDoe.png",
+      "implementation": "langchain",
+      "classification": {
+        "label": "unknown",
+        "confidence": 0.3
+      },
+      "extraction": [
+        {
+          "name": "extracted_text",
+          "value": "{\n  \"extraction\": {\n    \"fields\": [\n      {\n        \"name\": \"Name\",\n        \"value\": \"Jhon Doe\",\n        \"confidence\": 0.95,\n        \"bounding_box\": {\n          \"x\": 100,\n          \"y\": 100,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Address\",\n        \"value\": \"123 Main St\",\n        \"confidence\": 0.85,\n        \"bounding_box\": {\n          \"x\": 300,\n          \"y\": 150,\n          \"w\": 200,\n          \"h\": 50\n        }\n      },\n      {\n        \"name\": \"Date of Birth\",\n        \"value\": \"1990-01-01\",\n        \"confidence\": 0.90,\n        \"bounding_box\": {\n          \"x\": 500,\n          \"y\": 200,\n          \"w\": 150,\n          \"h\": 30\n        }\n      }\n    ],\n    \"total_fields_extracted\": 3\n  },\n  \"extraction_summary\": {\n    \"fields\": 3,\n    \"time_taken\": 0.5,\n    \"status\": \"success\"\n  },\n  \"metadata\": {\n    \"agent_id\": \"mcp_client_123\",\n    \"framework\": \"mcp_client\",\n    \"document_type\": \"idcard_classic\",\n    \"processing_time\": 0.5\n  },\n  \"trace\": {\n    \"step_info\": [\n      {\n        \"step\": \"preprocessing\",\n        \"time_taken\": 0.1\n      },\n      {\n        \"step\": \"extraction\",\n        \"time_taken\": 0.3\n      },\n      {\n        \"step\": \"postprocessing\",\n        \"time_taken\": 0.1\n      }\n    ]\n  }\n}"
+        }
+      ],
+      "accuracy": {
+        "classification": 0.8,
+        "extraction": {
+          "overall": 0.8
+        },
+        "overall": 0.8,
+        "metadata": {
+          "processing_time": 0.0
+        }
+      },
+      "timing": {
+        "total_processing_time": 106.77578282356262,
+        "individual_steps": {
+          "classification_time": 0.0,
+          "extraction_time": 0.0,
+          "accuracy_time": 0.0
+        },
+        "framework_processing_time": 106.77550268173218
+      },
+      "timestamp": "2025-09-16 15:40:34",
+      "processing_pipeline": [
+        {
+          "step": "classification",
+          "step_number": 1,
+          "agent": "langchain_classification_agent",
+          "start_time": "2025-09-16T12:38:47.fZ",
+          "end_time": "2025-09-16T12:38:47.fZ",
+          "duration_ms": 0.0,
+          "status": "completed",
+          "result_summary": "Classified as unknown with confidence 0.3"
+        },
+        {
+          "step": "extraction",
+          "step_number": 2,
+          "agent": "langchain_extraction_agent",
+          "start_time": "2025-09-16T12:38:47.fZ",
+          "end_time": "2025-09-16T12:38:47.fZ",
+          "duration_ms": 0.0,
+          "status": "completed",
+          "result_summary": "Extracted 1 fields"
+        },
+        {
+          "step": "accuracy_assessment",
+          "step_number": 3,
+          "agent": "langchain_accuracy_agent",
+          "start_time": "2025-09-16T12:38:47.fZ",
+          "end_time": "2025-09-16T12:38:47.fZ",
+          "duration_ms": 0.0,
+          "status": "completed",
+          "result_summary": "Overall accuracy 0.80"
+        },
+        {
+          "step": "final_decision",
+          "step_number": 4,
+          "agent": "langchain_final_decision_agent",
+          "start_time": "2025-09-16T12:38:47.fZ",
+          "end_time": "2025-09-16T12:40:34.fZ",
+          "duration_ms": 106775.78282356262,
+          "status": "completed",
+          "result_summary": "Processing completed successfully"
+        }
+      ],
+      "complete_trace_route": {
+        "processing_pipeline": [
+          {
+            "step": "classification",
+            "step_number": 1,
+            "agent": "langchain_classification_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:38:47.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Classified as unknown with confidence 0.3"
+          },
+          {
+            "step": "extraction",
+            "step_number": 2,
+            "agent": "langchain_extraction_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:38:47.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Extracted 1 fields"
+          },
+          {
+            "step": "accuracy_assessment",
+            "step_number": 3,
+            "agent": "langchain_accuracy_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:38:47.fZ",
+            "duration_ms": 0.0,
+            "status": "completed",
+            "result_summary": "Overall accuracy 0.80"
+          },
+          {
+            "step": "final_decision",
+            "step_number": 4,
+            "agent": "langchain_final_decision_agent",
+            "start_time": "2025-09-16T12:38:47.fZ",
+            "end_time": "2025-09-16T12:40:34.fZ",
+            "duration_ms": 106775.78282356262,
+            "status": "completed",
+            "result_summary": "Processing completed successfully"
+          }
+        ],
+        "total_processing_time_ms": 106775.78282356262,
+        "framework_used": "langchain",
+        "mcp_server_interactions": 4,
+        "processing_session_id": "session_1758026327705_langchain"
+      }
+    }
+  },
+  "performance_metrics": {
+    "total_time": 106.77578282356262,
+    "framework_time": 106.77550268173218,
+    "step_timings": {
+      "classification_time": 0.0,
+      "extraction_time": 0.0,
+      "accuracy_time": 0.0
+    },
+    "success_rate": 1.0
+  },
+  "quality_assessment": {
+    "overall_accuracy": 0.8,
+    "confidence": 0.3,
+    "document_type": "unknown",
+    "processing_status": "success"
+  },
+  "export_metadata": {
+    "export_timestamp": "2025-09-16T15:40:34Z",
+    "trace_version": "2.1.0",
+    "processor_version": "enhanced"
+  }
+}

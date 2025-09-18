@@ -1,0 +1,227 @@
+agents:
+  - name: "document_classification_agent"
+    role: "Document Classification Specialist"
+    goal: "Use the mcp_client tool to classify documents and return structured JSON results with trace information"
+    backstory: |
+      You are a document classification specialist. Use the mcp_client tool to classify documents.
+      
+      Call the tool with method="document/classify" and the image_path to get classification results from the MCP server.
+      
+      CRITICAL: Your response MUST be ONLY valid JSON, no additional text before or after.
+      Return a classification object with label, confidence, processing_details, metadata, and trace information.
+    tools: ["mcp_client"]
+
+  - name: "field_extraction_agent"
+    role: "Field Extraction Specialist"
+    goal: "Use the mcp_client tool to extract fields and return structured JSON results with trace information"
+    backstory: |
+      You are a field extraction specialist. Use the mcp_client tool to extract fields from documents.
+      
+      Call the tool with method="document/extract" and provide the image_path and document_type from classification.
+      
+      CRITICAL: Your response MUST be ONLY valid JSON, no additional text before or after.
+      Return an extraction object with fields array, total_fields_extracted, metadata, and trace information.
+    tools: ["mcp_client"]
+
+  - name: "accuracy_assessment_agent"
+    role: "Accuracy Assessment Specialist"
+    goal: "Use the mcp_client tool to assess accuracy and return structured JSON results with trace information"
+    backstory: |
+      You are an accuracy assessment specialist. Use the mcp_client tool to perform comprehensive document analysis.
+      
+      Call the tool with method="document/analyze" to get full analysis from the MCP server.
+      
+      CRITICAL: Your response MUST be ONLY valid JSON, no additional text before or after.
+      Return an accuracy_assessment object with classification_accuracy, extraction_accuracy, overall_accuracy, quality_metrics, issues_detected, recommendations, metadata, and trace information.
+    tools: ["mcp_client"]
+
+  - name: "final_decision_agent"
+    role: "Final Decision Specialist"
+    goal: "Make final decisions and return structured JSON results with comprehensive trace route"
+    backstory: |
+      You are a final decision specialist. Based on MCP server analysis and all previous assessments, make a final accept/reject decision.
+      
+      CRITICAL: Your response MUST be ONLY valid JSON, no additional text before or after.
+      Return a final_decision object with accept, confidence, reasoning, decision_factors, risk_assessment, required_actions, recommendations; processing_summary with steps and success metrics; complete_trace_route with processing pipeline; and metadata.
+    tools: ["mcp_client"]
+
+# Task templates for different operations
+tasks:
+  classification:
+    description: "Classify this document: {image_path}. Use MCP server and return results in JSON format with trace information."
+    expected_output: |
+      CRITICAL: Return ONLY valid JSON, no additional text:
+      {
+        "classification": {
+          "label": "document_type",
+          "confidence": 0.95,
+          "processing_details": {...}
+        },
+        "metadata": {
+          "agent_id": "document_classification_agent",
+          "framework": "crewai",
+          "image_path": "{image_path}",
+          "mcp_server_response": {...}
+        },
+        "trace": {
+          "step": "classification",
+          "step_number": 1,
+          "total_steps": 4,
+          "step_duration_ms": 623,
+          "next_step": "extraction"
+        }
+      }
+    
+  extraction:
+    description: "Extract fields from document: {image_path}, classified as: {document_type}. Use MCP server and return results in JSON format with trace information."
+    expected_output: |
+      CRITICAL: Return ONLY valid JSON, no additional text:
+      {
+        "extraction": {
+          "fields": [
+            {
+              "name": "field_name",
+              "value": "extracted_value",
+              "confidence": 0.92
+            }
+          ],
+          "total_fields_extracted": 7,
+          "extraction_summary": {...}
+        },
+        "metadata": {
+          "agent_id": "field_extraction_agent",
+          "framework": "crewai",
+          "document_type": "{document_type}",
+          "mcp_server_response": {...}
+        },
+        "trace": {
+          "step": "extraction",
+          "step_number": 2,
+          "total_steps": 4,
+          "previous_step": "classification",
+          "next_step": "accuracy_assessment"
+        }
+      }
+    
+  accuracy_assessment:
+    description: "Assess accuracy for document: {image_path}. Classification: {classification}, Extraction: {extraction}. Use MCP server and return results in JSON format with trace information."
+    expected_output: |
+      CRITICAL: Return ONLY valid JSON, no additional text:
+      {
+        "accuracy_assessment": {
+          "classification_accuracy": 0.95,
+          "extraction_accuracy": {
+            "field_name": 0.92
+          },
+          "overall_accuracy": 0.92,
+          "quality_metrics": {...},
+          "issues_detected": [...],
+          "recommendations": [...]
+        },
+        "metadata": {
+          "agent_id": "accuracy_assessment_agent",
+          "framework": "crewai",
+          "mcp_server_response": {...}
+        },
+        "trace": {
+          "step": "accuracy_assessment",
+          "step_number": 3,
+          "total_steps": 4,
+          "previous_step": "extraction",
+          "next_step": "final_decision"
+        }
+      }
+    
+  final_decision:
+    description: "Make final decision for document: {image_path}. Classification: {classification}, Extraction: {extraction}, Accuracy: {accuracy}. Return comprehensive JSON with complete trace route."
+    expected_output: |
+      CRITICAL: Return ONLY valid JSON, no additional text:
+      {
+        "final_decision": {
+          "accept": true,
+          "confidence": 0.90,
+          "reasoning": "Document meets all quality standards",
+          "decision_factors": {...},
+          "risk_assessment": {...}
+        },
+        "processing_summary": {
+          "total_steps_completed": 4,
+          "overall_processing_success": true,
+          "document_classification": "document_type",
+          "overall_accuracy": 0.92
+        },
+        "complete_trace_route": {
+          "processing_pipeline": [
+            {
+              "step": "classification",
+              "agent": "document_classification_agent",
+              "duration_ms": 623,
+              "status": "completed"
+            },
+            {
+              "step": "extraction", 
+              "agent": "field_extraction_agent",
+              "duration_ms": 1256,
+              "status": "completed"
+            },
+            {
+              "step": "accuracy_assessment",
+              "agent": "accuracy_assessment_agent", 
+              "duration_ms": 1289,
+              "status": "completed"
+            },
+            {
+              "step": "final_decision",
+              "agent": "final_decision_agent",
+              "duration_ms": 434,
+              "status": "completed"
+            }
+          ],
+          "total_processing_time_ms": 3602,
+          "framework_used": "crewai"
+        },
+        "metadata": {
+          "agent_id": "final_decision_agent",
+          "framework": "crewai",
+          "document_path": "{image_path}"
+        }
+      }
+
+# Human prompts for LangChain agents
+langchain_prompts:
+  classification: |
+    Classify this document: {image_path}
+    
+    CRITICAL: Your response MUST be ONLY valid JSON, no additional text before or after.
+    Return classification information in JSON format with confidence score and processing details.
+    
+    Use this structure: classification object with label, confidence, and processing_details; metadata with agent_id, framework, image_path, timestamp; trace with step info.
+    
+  extraction: |
+    Extract fields from document: {image_path}, classified as: {document_type}
+    
+    CRITICAL: Your response MUST be ONLY valid JSON, no additional text before or after.
+    Return extracted field information in JSON format with confidence scores for each field.
+    
+    Use this structure: extraction object with fields array (name, value, confidence, bounding_box), total_fields_extracted, extraction_summary; metadata with agent_id, framework, document_type, processing_time; trace with step info.
+    
+  accuracy_assessment: |
+    Assess accuracy for document: {image_path}
+    Classification: {classification}
+    Extraction: {extraction}
+    
+    CRITICAL: Your response MUST be ONLY valid JSON, no additional text before or after.
+    Return accuracy assessment information in JSON format with overall accuracy score and quality metrics.
+    
+    Use this structure: accuracy_assessment object with classification_accuracy, extraction_accuracy (field accuracies), overall_accuracy, quality_metrics, issues_detected, recommendations; metadata with agent_id, framework, processing_time; trace with step info.
+    
+  final_decision: |
+    Make final decision for document: {image_path}
+    Classification: {classification}
+    Extraction: {extraction} 
+    Accuracy: {accuracy}
+    
+    CRITICAL: Your response MUST be ONLY valid JSON, no additional text before or after.
+    Return final decision information in JSON format with accept/reject decision and reasoning.
+    
+    Use this structure: final_decision object with accept (boolean), confidence, reasoning, decision_factors, risk_assessment, required_actions, recommendations; processing_summary with steps completed and success metrics; complete_trace_route with processing pipeline; metadata with agent_id, framework, timestamp, document_path.

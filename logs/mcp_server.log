@@ -1,0 +1,2072 @@
+INFO:__main__:Starting MCP server on localhost:3000
+INFO:__main__:MCP server running on 127.0.0.1:3000
+INFO:__main__:Received request: POST / HTTP/1.1
+Host: localhost:3000
+User-Agent: python-requests/2.32.5
+Accept-Encoding: gzip, de...
+INFO:__main__:Processing method: document/classify with ID: req_20250916_152348_258526
+INFO:main.core.utils:OCR extraction results:
+{
+  "text": [
+    "ROUMANIE",
+    "ROMANIA",
+    "TE",
+    "TY",
+    "ig",
+    "Prenume/Prenom/First",
+    "Cetatenie/Nationalite/Natigna",
+    "Sex/Sexe/Sex",
+    "Loc",
+    "Romana",
+    "Of",
+    "ot",
+    "cinema",
+    "Jud.B",
+    "Mun.Ba",
+    "yy",
+    "Str",
+    "ie",
+    "072",
+    "eZ)",
+    "BC",
+    "by",
+    "ac",
+    "Valabilitate/Validite/Validity",
+    "15.12.19-16.10.2029",
+    "AB1",
+    "11234560"
+  ],
+  "confidence": [
+    91,
+    96,
+    89,
+    74,
+    50,
+    89,
+    41,
+    91,
+    93,
+    70,
+    77,
+    41,
+    22,
+    66,
+    88,
+    48,
+    16,
+    38,
+    39,
+    26,
+    89,
+    96,
+    48,
+    91,
+    72,
+    91,
+    95
+  ],
+  "bounding_boxes": [
+    {
+      "x": 26,
+      "y": 23,
+      "width": 211,
+      "height": 35
+    },
+    {
+      "x": 655,
+      "y": 45,
+      "width": 184,
+      "height": 33
+    },
+    {
+      "x": 332,
+      "y": 83,
+      "width": 22,
+      "height": 13
+    },
+    {
+      "x": 806,
+      "y": 102,
+      "width": 21,
+      "height": 12
+    },
+    {
+      "x": 728,
+      "y": 110,
+      "width": 24,
+      "height": 27
+    },
+    {
+      "x": 259,
+      "y": 189,
+      "width": 179,
+      "height": 18
+    },
+    {
+      "x": 257,
+      "y": 230,
+      "width": 238,
+      "height": 24
+    },
+    {
+      "x": 713,
+      "y": 246,
+      "width": 107,
+      "height": 15
+    },
+    {
+      "x": 255,
+      "y": 269,
+      "width": 32,
+      "height": 24
+    },
+    {
+      "x": 263,
+      "y": 249,
+      "width": 90,
+      "height": 23
+    },
+    {
+      "x": 553,
+      "y": 274,
+      "width": 20,
+      "height": 29
+    },
+    {
+      "x": 579,
+      "y": 266,
+      "width": 45,
+      "height": 52
+    },
+    {
+      "x": 253,
+      "y": 291,
+      "width": 208,
+      "height": 65
+    },
+    {
+      "x": 258,
+      "y": 333,
+      "width": 70,
+      "height": 22
+    },
+    {
+      "x": 358,
+      "y": 336,
+      "width": 84,
+      "height": 23
+    },
+    {
+      "x": 470,
+      "y": 281,
+      "width": 69,
+      "height": 83
+    },
+    {
+      "x": 258,
+      "y": 363,
+      "width": 51,
+      "height": 21
+    },
+    {
+      "x": 316,
+      "y": 335,
+      "width": 27,
+      "height": 51
+    },
+    {
+      "x": 34,
+      "y": 381,
+      "width": 46,
+      "height": 23
+    },
+    {
+      "x": 94,
+      "y": 364,
+      "width": 74,
+      "height": 72
+    },
+    {
+      "x": 191,
+      "y": 388,
+      "width": 29,
+      "height": 21
+    },
+    {
+      "x": 481,
+      "y": 393,
+      "width": 17,
+      "height": 17
+    },
+    {
+      "x": 509,
+      "y": 234,
+      "width": 153,
+      "height": 169
+    },
+    {
+      "x": 615,
+      "y": 398,
+      "width": 220,
+      "height": 23
+    },
+    {
+      "x": 571,
+      "y": 416,
+      "width": 268,
+      "height": 30
+    },
+    {
+      "x": 31,
+      "y": 492,
+      "width": 56,
+      "height": 22
+    },
+    {
+      "x": 647,
+      "y": 511,
+      "width": 168,
+      "height": 27
+    }
+  ]
+}
+INFO:__main__:Received request: POST / HTTP/1.1
+Host: localhost:3000
+User-Agent: python-requests/2.32.5
+Accept-Encoding: gzip, de...
+INFO:__main__:Processing method: document/extract with ID: req_20250916_152409_982020
+INFO:main.core.utils:OCR extraction results:
+{
+  "text": [
+    "ROUMANIE",
+    "ROMANIA",
+    "TE",
+    "TY",
+    "ig",
+    "Prenume/Prenom/First",
+    "Cetatenie/Nationalite/Natigna",
+    "Sex/Sexe/Sex",
+    "Loc",
+    "Romana",
+    "Of",
+    "ot",
+    "cinema",
+    "Jud.B",
+    "Mun.Ba",
+    "yy",
+    "Str",
+    "ie",
+    "072",
+    "eZ)",
+    "BC",
+    "by",
+    "ac",
+    "Valabilitate/Validite/Validity",
+    "15.12.19-16.10.2029",
+    "AB1",
+    "11234560"
+  ],
+  "confidence": [
+    91,
+    96,
+    89,
+    74,
+    50,
+    89,
+    41,
+    91,
+    93,
+    70,
+    77,
+    41,
+    22,
+    66,
+    88,
+    48,
+    16,
+    38,
+    39,
+    26,
+    89,
+    96,
+    48,
+    91,
+    72,
+    91,
+    95
+  ],
+  "bounding_boxes": [
+    {
+      "x": 26,
+      "y": 23,
+      "width": 211,
+      "height": 35
+    },
+    {
+      "x": 655,
+      "y": 45,
+      "width": 184,
+      "height": 33
+    },
+    {
+      "x": 332,
+      "y": 83,
+      "width": 22,
+      "height": 13
+    },
+    {
+      "x": 806,
+      "y": 102,
+      "width": 21,
+      "height": 12
+    },
+    {
+      "x": 728,
+      "y": 110,
+      "width": 24,
+      "height": 27
+    },
+    {
+      "x": 259,
+      "y": 189,
+      "width": 179,
+      "height": 18
+    },
+    {
+      "x": 257,
+      "y": 230,
+      "width": 238,
+      "height": 24
+    },
+    {
+      "x": 713,
+      "y": 246,
+      "width": 107,
+      "height": 15
+    },
+    {
+      "x": 255,
+      "y": 269,
+      "width": 32,
+      "height": 24
+    },
+    {
+      "x": 263,
+      "y": 249,
+      "width": 90,
+      "height": 23
+    },
+    {
+      "x": 553,
+      "y": 274,
+      "width": 20,
+      "height": 29
+    },
+    {
+      "x": 579,
+      "y": 266,
+      "width": 45,
+      "height": 52
+    },
+    {
+      "x": 253,
+      "y": 291,
+      "width": 208,
+      "height": 65
+    },
+    {
+      "x": 258,
+      "y": 333,
+      "width": 70,
+      "height": 22
+    },
+    {
+      "x": 358,
+      "y": 336,
+      "width": 84,
+      "height": 23
+    },
+    {
+      "x": 470,
+      "y": 281,
+      "width": 69,
+      "height": 83
+    },
+    {
+      "x": 258,
+      "y": 363,
+      "width": 51,
+      "height": 21
+    },
+    {
+      "x": 316,
+      "y": 335,
+      "width": 27,
+      "height": 51
+    },
+    {
+      "x": 34,
+      "y": 381,
+      "width": 46,
+      "height": 23
+    },
+    {
+      "x": 94,
+      "y": 364,
+      "width": 74,
+      "height": 72
+    },
+    {
+      "x": 191,
+      "y": 388,
+      "width": 29,
+      "height": 21
+    },
+    {
+      "x": 481,
+      "y": 393,
+      "width": 17,
+      "height": 17
+    },
+    {
+      "x": 509,
+      "y": 234,
+      "width": 153,
+      "height": 169
+    },
+    {
+      "x": 615,
+      "y": 398,
+      "width": 220,
+      "height": 23
+    },
+    {
+      "x": 571,
+      "y": 416,
+      "width": 268,
+      "height": 30
+    },
+    {
+      "x": 31,
+      "y": 492,
+      "width": 56,
+      "height": 22
+    },
+    {
+      "x": 647,
+      "y": 511,
+      "width": 168,
+      "height": 27
+    }
+  ]
+}
+INFO:__main__:Received request: POST / HTTP/1.1
+Host: localhost:3000
+User-Agent: python-requests/2.32.5
+Accept-Encoding: gzip, de...
+INFO:__main__:Processing method: document/analyze with ID: req_20250916_152442_938208
+INFO:main.core.utils:OCR extraction results:
+{
+  "text": [
+    "ROUMANIE",
+    "ROMANIA",
+    "TE",
+    "TY",
+    "ig",
+    "Prenume/Prenom/First",
+    "Cetatenie/Nationalite/Natigna",
+    "Sex/Sexe/Sex",
+    "Loc",
+    "Romana",
+    "Of",
+    "ot",
+    "cinema",
+    "Jud.B",
+    "Mun.Ba",
+    "yy",
+    "Str",
+    "ie",
+    "072",
+    "eZ)",
+    "BC",
+    "by",
+    "ac",
+    "Valabilitate/Validite/Validity",
+    "15.12.19-16.10.2029",
+    "AB1",
+    "11234560"
+  ],
+  "confidence": [
+    91,
+    96,
+    89,
+    74,
+    50,
+    89,
+    41,
+    91,
+    93,
+    70,
+    77,
+    41,
+    22,
+    66,
+    88,
+    48,
+    16,
+    38,
+    39,
+    26,
+    89,
+    96,
+    48,
+    91,
+    72,
+    91,
+    95
+  ],
+  "bounding_boxes": [
+    {
+      "x": 26,
+      "y": 23,
+      "width": 211,
+      "height": 35
+    },
+    {
+      "x": 655,
+      "y": 45,
+      "width": 184,
+      "height": 33
+    },
+    {
+      "x": 332,
+      "y": 83,
+      "width": 22,
+      "height": 13
+    },
+    {
+      "x": 806,
+      "y": 102,
+      "width": 21,
+      "height": 12
+    },
+    {
+      "x": 728,
+      "y": 110,
+      "width": 24,
+      "height": 27
+    },
+    {
+      "x": 259,
+      "y": 189,
+      "width": 179,
+      "height": 18
+    },
+    {
+      "x": 257,
+      "y": 230,
+      "width": 238,
+      "height": 24
+    },
+    {
+      "x": 713,
+      "y": 246,
+      "width": 107,
+      "height": 15
+    },
+    {
+      "x": 255,
+      "y": 269,
+      "width": 32,
+      "height": 24
+    },
+    {
+      "x": 263,
+      "y": 249,
+      "width": 90,
+      "height": 23
+    },
+    {
+      "x": 553,
+      "y": 274,
+      "width": 20,
+      "height": 29
+    },
+    {
+      "x": 579,
+      "y": 266,
+      "width": 45,
+      "height": 52
+    },
+    {
+      "x": 253,
+      "y": 291,
+      "width": 208,
+      "height": 65
+    },
+    {
+      "x": 258,
+      "y": 333,
+      "width": 70,
+      "height": 22
+    },
+    {
+      "x": 358,
+      "y": 336,
+      "width": 84,
+      "height": 23
+    },
+    {
+      "x": 470,
+      "y": 281,
+      "width": 69,
+      "height": 83
+    },
+    {
+      "x": 258,
+      "y": 363,
+      "width": 51,
+      "height": 21
+    },
+    {
+      "x": 316,
+      "y": 335,
+      "width": 27,
+      "height": 51
+    },
+    {
+      "x": 34,
+      "y": 381,
+      "width": 46,
+      "height": 23
+    },
+    {
+      "x": 94,
+      "y": 364,
+      "width": 74,
+      "height": 72
+    },
+    {
+      "x": 191,
+      "y": 388,
+      "width": 29,
+      "height": 21
+    },
+    {
+      "x": 481,
+      "y": 393,
+      "width": 17,
+      "height": 17
+    },
+    {
+      "x": 509,
+      "y": 234,
+      "width": 153,
+      "height": 169
+    },
+    {
+      "x": 615,
+      "y": 398,
+      "width": 220,
+      "height": 23
+    },
+    {
+      "x": 571,
+      "y": 416,
+      "width": 268,
+      "height": 30
+    },
+    {
+      "x": 31,
+      "y": 492,
+      "width": 56,
+      "height": 22
+    },
+    {
+      "x": 647,
+      "y": 511,
+      "width": 168,
+      "height": 27
+    }
+  ]
+}
+INFO:__main__:Received request: POST / HTTP/1.1
+Host: localhost:3000
+User-Agent: python-requests/2.32.5
+Accept-Encoding: gzip, de...
+INFO:__main__:Processing method: document/classify with ID: req_20250916_153109_882778
+INFO:main.core.utils:OCR extraction results:
+{
+  "text": [
+    "ROUMANIE",
+    "ROMANIA",
+    "TE",
+    "TY",
+    "ig",
+    "Prenume/Prenom/First",
+    "Cetatenie/Nationalite/Natigna",
+    "Sex/Sexe/Sex",
+    "Loc",
+    "Romana",
+    "Of",
+    "ot",
+    "cinema",
+    "Jud.B",
+    "Mun.Ba",
+    "yy",
+    "Str",
+    "ie",
+    "072",
+    "eZ)",
+    "BC",
+    "by",
+    "ac",
+    "Valabilitate/Validite/Validity",
+    "15.12.19-16.10.2029",
+    "AB1",
+    "11234560"
+  ],
+  "confidence": [
+    91,
+    96,
+    89,
+    74,
+    50,
+    89,
+    41,
+    91,
+    93,
+    70,
+    77,
+    41,
+    22,
+    66,
+    88,
+    48,
+    16,
+    38,
+    39,
+    26,
+    89,
+    96,
+    48,
+    91,
+    72,
+    91,
+    95
+  ],
+  "bounding_boxes": [
+    {
+      "x": 26,
+      "y": 23,
+      "width": 211,
+      "height": 35
+    },
+    {
+      "x": 655,
+      "y": 45,
+      "width": 184,
+      "height": 33
+    },
+    {
+      "x": 332,
+      "y": 83,
+      "width": 22,
+      "height": 13
+    },
+    {
+      "x": 806,
+      "y": 102,
+      "width": 21,
+      "height": 12
+    },
+    {
+      "x": 728,
+      "y": 110,
+      "width": 24,
+      "height": 27
+    },
+    {
+      "x": 259,
+      "y": 189,
+      "width": 179,
+      "height": 18
+    },
+    {
+      "x": 257,
+      "y": 230,
+      "width": 238,
+      "height": 24
+    },
+    {
+      "x": 713,
+      "y": 246,
+      "width": 107,
+      "height": 15
+    },
+    {
+      "x": 255,
+      "y": 269,
+      "width": 32,
+      "height": 24
+    },
+    {
+      "x": 263,
+      "y": 249,
+      "width": 90,
+      "height": 23
+    },
+    {
+      "x": 553,
+      "y": 274,
+      "width": 20,
+      "height": 29
+    },
+    {
+      "x": 579,
+      "y": 266,
+      "width": 45,
+      "height": 52
+    },
+    {
+      "x": 253,
+      "y": 291,
+      "width": 208,
+      "height": 65
+    },
+    {
+      "x": 258,
+      "y": 333,
+      "width": 70,
+      "height": 22
+    },
+    {
+      "x": 358,
+      "y": 336,
+      "width": 84,
+      "height": 23
+    },
+    {
+      "x": 470,
+      "y": 281,
+      "width": 69,
+      "height": 83
+    },
+    {
+      "x": 258,
+      "y": 363,
+      "width": 51,
+      "height": 21
+    },
+    {
+      "x": 316,
+      "y": 335,
+      "width": 27,
+      "height": 51
+    },
+    {
+      "x": 34,
+      "y": 381,
+      "width": 46,
+      "height": 23
+    },
+    {
+      "x": 94,
+      "y": 364,
+      "width": 74,
+      "height": 72
+    },
+    {
+      "x": 191,
+      "y": 388,
+      "width": 29,
+      "height": 21
+    },
+    {
+      "x": 481,
+      "y": 393,
+      "width": 17,
+      "height": 17
+    },
+    {
+      "x": 509,
+      "y": 234,
+      "width": 153,
+      "height": 169
+    },
+    {
+      "x": 615,
+      "y": 398,
+      "width": 220,
+      "height": 23
+    },
+    {
+      "x": 571,
+      "y": 416,
+      "width": 268,
+      "height": 30
+    },
+    {
+      "x": 31,
+      "y": 492,
+      "width": 56,
+      "height": 22
+    },
+    {
+      "x": 647,
+      "y": 511,
+      "width": 168,
+      "height": 27
+    }
+  ]
+}
+INFO:__main__:Received request: POST / HTTP/1.1
+Host: localhost:3000
+User-Agent: python-requests/2.32.5
+Accept-Encoding: gzip, de...
+INFO:__main__:Processing method: document/extract with ID: req_20250916_153130_736155
+INFO:main.core.utils:OCR extraction results:
+{
+  "text": [
+    "ROUMANIE",
+    "ROMANIA",
+    "TE",
+    "TY",
+    "ig",
+    "Prenume/Prenom/First",
+    "Cetatenie/Nationalite/Natigna",
+    "Sex/Sexe/Sex",
+    "Loc",
+    "Romana",
+    "Of",
+    "ot",
+    "cinema",
+    "Jud.B",
+    "Mun.Ba",
+    "yy",
+    "Str",
+    "ie",
+    "072",
+    "eZ)",
+    "BC",
+    "by",
+    "ac",
+    "Valabilitate/Validite/Validity",
+    "15.12.19-16.10.2029",
+    "AB1",
+    "11234560"
+  ],
+  "confidence": [
+    91,
+    96,
+    89,
+    74,
+    50,
+    89,
+    41,
+    91,
+    93,
+    70,
+    77,
+    41,
+    22,
+    66,
+    88,
+    48,
+    16,
+    38,
+    39,
+    26,
+    89,
+    96,
+    48,
+    91,
+    72,
+    91,
+    95
+  ],
+  "bounding_boxes": [
+    {
+      "x": 26,
+      "y": 23,
+      "width": 211,
+      "height": 35
+    },
+    {
+      "x": 655,
+      "y": 45,
+      "width": 184,
+      "height": 33
+    },
+    {
+      "x": 332,
+      "y": 83,
+      "width": 22,
+      "height": 13
+    },
+    {
+      "x": 806,
+      "y": 102,
+      "width": 21,
+      "height": 12
+    },
+    {
+      "x": 728,
+      "y": 110,
+      "width": 24,
+      "height": 27
+    },
+    {
+      "x": 259,
+      "y": 189,
+      "width": 179,
+      "height": 18
+    },
+    {
+      "x": 257,
+      "y": 230,
+      "width": 238,
+      "height": 24
+    },
+    {
+      "x": 713,
+      "y": 246,
+      "width": 107,
+      "height": 15
+    },
+    {
+      "x": 255,
+      "y": 269,
+      "width": 32,
+      "height": 24
+    },
+    {
+      "x": 263,
+      "y": 249,
+      "width": 90,
+      "height": 23
+    },
+    {
+      "x": 553,
+      "y": 274,
+      "width": 20,
+      "height": 29
+    },
+    {
+      "x": 579,
+      "y": 266,
+      "width": 45,
+      "height": 52
+    },
+    {
+      "x": 253,
+      "y": 291,
+      "width": 208,
+      "height": 65
+    },
+    {
+      "x": 258,
+      "y": 333,
+      "width": 70,
+      "height": 22
+    },
+    {
+      "x": 358,
+      "y": 336,
+      "width": 84,
+      "height": 23
+    },
+    {
+      "x": 470,
+      "y": 281,
+      "width": 69,
+      "height": 83
+    },
+    {
+      "x": 258,
+      "y": 363,
+      "width": 51,
+      "height": 21
+    },
+    {
+      "x": 316,
+      "y": 335,
+      "width": 27,
+      "height": 51
+    },
+    {
+      "x": 34,
+      "y": 381,
+      "width": 46,
+      "height": 23
+    },
+    {
+      "x": 94,
+      "y": 364,
+      "width": 74,
+      "height": 72
+    },
+    {
+      "x": 191,
+      "y": 388,
+      "width": 29,
+      "height": 21
+    },
+    {
+      "x": 481,
+      "y": 393,
+      "width": 17,
+      "height": 17
+    },
+    {
+      "x": 509,
+      "y": 234,
+      "width": 153,
+      "height": 169
+    },
+    {
+      "x": 615,
+      "y": 398,
+      "width": 220,
+      "height": 23
+    },
+    {
+      "x": 571,
+      "y": 416,
+      "width": 268,
+      "height": 30
+    },
+    {
+      "x": 31,
+      "y": 492,
+      "width": 56,
+      "height": 22
+    },
+    {
+      "x": 647,
+      "y": 511,
+      "width": 168,
+      "height": 27
+    }
+  ]
+}
+INFO:__main__:Received request: POST / HTTP/1.1
+Host: localhost:3000
+User-Agent: python-requests/2.32.5
+Accept-Encoding: gzip, de...
+INFO:__main__:Processing method: document/analyze with ID: req_20250916_153155_829968
+INFO:main.core.utils:OCR extraction results:
+{
+  "text": [
+    "ROUMANIE",
+    "ROMANIA",
+    "TE",
+    "TY",
+    "ig",
+    "Prenume/Prenom/First",
+    "Cetatenie/Nationalite/Natigna",
+    "Sex/Sexe/Sex",
+    "Loc",
+    "Romana",
+    "Of",
+    "ot",
+    "cinema",
+    "Jud.B",
+    "Mun.Ba",
+    "yy",
+    "Str",
+    "ie",
+    "072",
+    "eZ)",
+    "BC",
+    "by",
+    "ac",
+    "Valabilitate/Validite/Validity",
+    "15.12.19-16.10.2029",
+    "AB1",
+    "11234560"
+  ],
+  "confidence": [
+    91,
+    96,
+    89,
+    74,
+    50,
+    89,
+    41,
+    91,
+    93,
+    70,
+    77,
+    41,
+    22,
+    66,
+    88,
+    48,
+    16,
+    38,
+    39,
+    26,
+    89,
+    96,
+    48,
+    91,
+    72,
+    91,
+    95
+  ],
+  "bounding_boxes": [
+    {
+      "x": 26,
+      "y": 23,
+      "width": 211,
+      "height": 35
+    },
+    {
+      "x": 655,
+      "y": 45,
+      "width": 184,
+      "height": 33
+    },
+    {
+      "x": 332,
+      "y": 83,
+      "width": 22,
+      "height": 13
+    },
+    {
+      "x": 806,
+      "y": 102,
+      "width": 21,
+      "height": 12
+    },
+    {
+      "x": 728,
+      "y": 110,
+      "width": 24,
+      "height": 27
+    },
+    {
+      "x": 259,
+      "y": 189,
+      "width": 179,
+      "height": 18
+    },
+    {
+      "x": 257,
+      "y": 230,
+      "width": 238,
+      "height": 24
+    },
+    {
+      "x": 713,
+      "y": 246,
+      "width": 107,
+      "height": 15
+    },
+    {
+      "x": 255,
+      "y": 269,
+      "width": 32,
+      "height": 24
+    },
+    {
+      "x": 263,
+      "y": 249,
+      "width": 90,
+      "height": 23
+    },
+    {
+      "x": 553,
+      "y": 274,
+      "width": 20,
+      "height": 29
+    },
+    {
+      "x": 579,
+      "y": 266,
+      "width": 45,
+      "height": 52
+    },
+    {
+      "x": 253,
+      "y": 291,
+      "width": 208,
+      "height": 65
+    },
+    {
+      "x": 258,
+      "y": 333,
+      "width": 70,
+      "height": 22
+    },
+    {
+      "x": 358,
+      "y": 336,
+      "width": 84,
+      "height": 23
+    },
+    {
+      "x": 470,
+      "y": 281,
+      "width": 69,
+      "height": 83
+    },
+    {
+      "x": 258,
+      "y": 363,
+      "width": 51,
+      "height": 21
+    },
+    {
+      "x": 316,
+      "y": 335,
+      "width": 27,
+      "height": 51
+    },
+    {
+      "x": 34,
+      "y": 381,
+      "width": 46,
+      "height": 23
+    },
+    {
+      "x": 94,
+      "y": 364,
+      "width": 74,
+      "height": 72
+    },
+    {
+      "x": 191,
+      "y": 388,
+      "width": 29,
+      "height": 21
+    },
+    {
+      "x": 481,
+      "y": 393,
+      "width": 17,
+      "height": 17
+    },
+    {
+      "x": 509,
+      "y": 234,
+      "width": 153,
+      "height": 169
+    },
+    {
+      "x": 615,
+      "y": 398,
+      "width": 220,
+      "height": 23
+    },
+    {
+      "x": 571,
+      "y": 416,
+      "width": 268,
+      "height": 30
+    },
+    {
+      "x": 31,
+      "y": 492,
+      "width": 56,
+      "height": 22
+    },
+    {
+      "x": 647,
+      "y": 511,
+      "width": 168,
+      "height": 27
+    }
+  ]
+}
+INFO:__main__:Received request: POST / HTTP/1.1
+Host: localhost:3000
+User-Agent: python-requests/2.32.5
+Accept-Encoding: gzip, de...
+INFO:__main__:Processing method: document/classify with ID: req_20250916_153842_454244
+INFO:main.core.utils:OCR extraction results:
+{
+  "text": [
+    "ROUMANIE",
+    "ROMANIA",
+    "TE",
+    "TY",
+    "ig",
+    "Prenume/Prenom/First",
+    "Cetatenie/Nationalite/Natigna",
+    "Sex/Sexe/Sex",
+    "Loc",
+    "Romana",
+    "Of",
+    "ot",
+    "cinema",
+    "Jud.B",
+    "Mun.Ba",
+    "yy",
+    "Str",
+    "ie",
+    "072",
+    "eZ)",
+    "BC",
+    "by",
+    "ac",
+    "Valabilitate/Validite/Validity",
+    "15.12.19-16.10.2029",
+    "AB1",
+    "11234560"
+  ],
+  "confidence": [
+    91,
+    96,
+    89,
+    74,
+    50,
+    89,
+    41,
+    91,
+    93,
+    70,
+    77,
+    41,
+    22,
+    66,
+    88,
+    48,
+    16,
+    38,
+    39,
+    26,
+    89,
+    96,
+    48,
+    91,
+    72,
+    91,
+    95
+  ],
+  "bounding_boxes": [
+    {
+      "x": 26,
+      "y": 23,
+      "width": 211,
+      "height": 35
+    },
+    {
+      "x": 655,
+      "y": 45,
+      "width": 184,
+      "height": 33
+    },
+    {
+      "x": 332,
+      "y": 83,
+      "width": 22,
+      "height": 13
+    },
+    {
+      "x": 806,
+      "y": 102,
+      "width": 21,
+      "height": 12
+    },
+    {
+      "x": 728,
+      "y": 110,
+      "width": 24,
+      "height": 27
+    },
+    {
+      "x": 259,
+      "y": 189,
+      "width": 179,
+      "height": 18
+    },
+    {
+      "x": 257,
+      "y": 230,
+      "width": 238,
+      "height": 24
+    },
+    {
+      "x": 713,
+      "y": 246,
+      "width": 107,
+      "height": 15
+    },
+    {
+      "x": 255,
+      "y": 269,
+      "width": 32,
+      "height": 24
+    },
+    {
+      "x": 263,
+      "y": 249,
+      "width": 90,
+      "height": 23
+    },
+    {
+      "x": 553,
+      "y": 274,
+      "width": 20,
+      "height": 29
+    },
+    {
+      "x": 579,
+      "y": 266,
+      "width": 45,
+      "height": 52
+    },
+    {
+      "x": 253,
+      "y": 291,
+      "width": 208,
+      "height": 65
+    },
+    {
+      "x": 258,
+      "y": 333,
+      "width": 70,
+      "height": 22
+    },
+    {
+      "x": 358,
+      "y": 336,
+      "width": 84,
+      "height": 23
+    },
+    {
+      "x": 470,
+      "y": 281,
+      "width": 69,
+      "height": 83
+    },
+    {
+      "x": 258,
+      "y": 363,
+      "width": 51,
+      "height": 21
+    },
+    {
+      "x": 316,
+      "y": 335,
+      "width": 27,
+      "height": 51
+    },
+    {
+      "x": 34,
+      "y": 381,
+      "width": 46,
+      "height": 23
+    },
+    {
+      "x": 94,
+      "y": 364,
+      "width": 74,
+      "height": 72
+    },
+    {
+      "x": 191,
+      "y": 388,
+      "width": 29,
+      "height": 21
+    },
+    {
+      "x": 481,
+      "y": 393,
+      "width": 17,
+      "height": 17
+    },
+    {
+      "x": 509,
+      "y": 234,
+      "width": 153,
+      "height": 169
+    },
+    {
+      "x": 615,
+      "y": 398,
+      "width": 220,
+      "height": 23
+    },
+    {
+      "x": 571,
+      "y": 416,
+      "width": 268,
+      "height": 30
+    },
+    {
+      "x": 31,
+      "y": 492,
+      "width": 56,
+      "height": 22
+    },
+    {
+      "x": 647,
+      "y": 511,
+      "width": 168,
+      "height": 27
+    }
+  ]
+}
+INFO:__main__:Received request: POST / HTTP/1.1
+Host: localhost:3000
+User-Agent: python-requests/2.32.5
+Accept-Encoding: gzip, de...
+INFO:__main__:Processing method: document/extract with ID: req_20250916_153902_826765
+INFO:main.core.utils:OCR extraction results:
+{
+  "text": [
+    "ROUMANIE",
+    "ROMANIA",
+    "TE",
+    "TY",
+    "ig",
+    "Prenume/Prenom/First",
+    "Cetatenie/Nationalite/Natigna",
+    "Sex/Sexe/Sex",
+    "Loc",
+    "Romana",
+    "Of",
+    "ot",
+    "cinema",
+    "Jud.B",
+    "Mun.Ba",
+    "yy",
+    "Str",
+    "ie",
+    "072",
+    "eZ)",
+    "BC",
+    "by",
+    "ac",
+    "Valabilitate/Validite/Validity",
+    "15.12.19-16.10.2029",
+    "AB1",
+    "11234560"
+  ],
+  "confidence": [
+    91,
+    96,
+    89,
+    74,
+    50,
+    89,
+    41,
+    91,
+    93,
+    70,
+    77,
+    41,
+    22,
+    66,
+    88,
+    48,
+    16,
+    38,
+    39,
+    26,
+    89,
+    96,
+    48,
+    91,
+    72,
+    91,
+    95
+  ],
+  "bounding_boxes": [
+    {
+      "x": 26,
+      "y": 23,
+      "width": 211,
+      "height": 35
+    },
+    {
+      "x": 655,
+      "y": 45,
+      "width": 184,
+      "height": 33
+    },
+    {
+      "x": 332,
+      "y": 83,
+      "width": 22,
+      "height": 13
+    },
+    {
+      "x": 806,
+      "y": 102,
+      "width": 21,
+      "height": 12
+    },
+    {
+      "x": 728,
+      "y": 110,
+      "width": 24,
+      "height": 27
+    },
+    {
+      "x": 259,
+      "y": 189,
+      "width": 179,
+      "height": 18
+    },
+    {
+      "x": 257,
+      "y": 230,
+      "width": 238,
+      "height": 24
+    },
+    {
+      "x": 713,
+      "y": 246,
+      "width": 107,
+      "height": 15
+    },
+    {
+      "x": 255,
+      "y": 269,
+      "width": 32,
+      "height": 24
+    },
+    {
+      "x": 263,
+      "y": 249,
+      "width": 90,
+      "height": 23
+    },
+    {
+      "x": 553,
+      "y": 274,
+      "width": 20,
+      "height": 29
+    },
+    {
+      "x": 579,
+      "y": 266,
+      "width": 45,
+      "height": 52
+    },
+    {
+      "x": 253,
+      "y": 291,
+      "width": 208,
+      "height": 65
+    },
+    {
+      "x": 258,
+      "y": 333,
+      "width": 70,
+      "height": 22
+    },
+    {
+      "x": 358,
+      "y": 336,
+      "width": 84,
+      "height": 23
+    },
+    {
+      "x": 470,
+      "y": 281,
+      "width": 69,
+      "height": 83
+    },
+    {
+      "x": 258,
+      "y": 363,
+      "width": 51,
+      "height": 21
+    },
+    {
+      "x": 316,
+      "y": 335,
+      "width": 27,
+      "height": 51
+    },
+    {
+      "x": 34,
+      "y": 381,
+      "width": 46,
+      "height": 23
+    },
+    {
+      "x": 94,
+      "y": 364,
+      "width": 74,
+      "height": 72
+    },
+    {
+      "x": 191,
+      "y": 388,
+      "width": 29,
+      "height": 21
+    },
+    {
+      "x": 481,
+      "y": 393,
+      "width": 17,
+      "height": 17
+    },
+    {
+      "x": 509,
+      "y": 234,
+      "width": 153,
+      "height": 169
+    },
+    {
+      "x": 615,
+      "y": 398,
+      "width": 220,
+      "height": 23
+    },
+    {
+      "x": 571,
+      "y": 416,
+      "width": 268,
+      "height": 30
+    },
+    {
+      "x": 31,
+      "y": 492,
+      "width": 56,
+      "height": 22
+    },
+    {
+      "x": 647,
+      "y": 511,
+      "width": 168,
+      "height": 27
+    }
+  ]
+}
+INFO:__main__:Received request: POST / HTTP/1.1
+Host: localhost:3000
+User-Agent: python-requests/2.32.5
+Accept-Encoding: gzip, de...
+INFO:__main__:Processing method: document/analyze with ID: req_20250916_153928_645541
+INFO:main.core.utils:OCR extraction results:
+{
+  "text": [
+    "ROUMANIE",
+    "ROMANIA",
+    "TE",
+    "TY",
+    "ig",
+    "Prenume/Prenom/First",
+    "Cetatenie/Nationalite/Natigna",
+    "Sex/Sexe/Sex",
+    "Loc",
+    "Romana",
+    "Of",
+    "ot",
+    "cinema",
+    "Jud.B",
+    "Mun.Ba",
+    "yy",
+    "Str",
+    "ie",
+    "072",
+    "eZ)",
+    "BC",
+    "by",
+    "ac",
+    "Valabilitate/Validite/Validity",
+    "15.12.19-16.10.2029",
+    "AB1",
+    "11234560"
+  ],
+  "confidence": [
+    91,
+    96,
+    89,
+    74,
+    50,
+    89,
+    41,
+    91,
+    93,
+    70,
+    77,
+    41,
+    22,
+    66,
+    88,
+    48,
+    16,
+    38,
+    39,
+    26,
+    89,
+    96,
+    48,
+    91,
+    72,
+    91,
+    95
+  ],
+  "bounding_boxes": [
+    {
+      "x": 26,
+      "y": 23,
+      "width": 211,
+      "height": 35
+    },
+    {
+      "x": 655,
+      "y": 45,
+      "width": 184,
+      "height": 33
+    },
+    {
+      "x": 332,
+      "y": 83,
+      "width": 22,
+      "height": 13
+    },
+    {
+      "x": 806,
+      "y": 102,
+      "width": 21,
+      "height": 12
+    },
+    {
+      "x": 728,
+      "y": 110,
+      "width": 24,
+      "height": 27
+    },
+    {
+      "x": 259,
+      "y": 189,
+      "width": 179,
+      "height": 18
+    },
+    {
+      "x": 257,
+      "y": 230,
+      "width": 238,
+      "height": 24
+    },
+    {
+      "x": 713,
+      "y": 246,
+      "width": 107,
+      "height": 15
+    },
+    {
+      "x": 255,
+      "y": 269,
+      "width": 32,
+      "height": 24
+    },
+    {
+      "x": 263,
+      "y": 249,
+      "width": 90,
+      "height": 23
+    },
+    {
+      "x": 553,
+      "y": 274,
+      "width": 20,
+      "height": 29
+    },
+    {
+      "x": 579,
+      "y": 266,
+      "width": 45,
+      "height": 52
+    },
+    {
+      "x": 253,
+      "y": 291,
+      "width": 208,
+      "height": 65
+    },
+    {
+      "x": 258,
+      "y": 333,
+      "width": 70,
+      "height": 22
+    },
+    {
+      "x": 358,
+      "y": 336,
+      "width": 84,
+      "height": 23
+    },
+    {
+      "x": 470,
+      "y": 281,
+      "width": 69,
+      "height": 83
+    },
+    {
+      "x": 258,
+      "y": 363,
+      "width": 51,
+      "height": 21
+    },
+    {
+      "x": 316,
+      "y": 335,
+      "width": 27,
+      "height": 51
+    },
+    {
+      "x": 34,
+      "y": 381,
+      "width": 46,
+      "height": 23
+    },
+    {
+      "x": 94,
+      "y": 364,
+      "width": 74,
+      "height": 72
+    },
+    {
+      "x": 191,
+      "y": 388,
+      "width": 29,
+      "height": 21
+    },
+    {
+      "x": 481,
+      "y": 393,
+      "width": 17,
+      "height": 17
+    },
+    {
+      "x": 509,
+      "y": 234,
+      "width": 153,
+      "height": 169
+    },
+    {
+      "x": 615,
+      "y": 398,
+      "width": 220,
+      "height": 23
+    },
+    {
+      "x": 571,
+      "y": 416,
+      "width": 268,
+      "height": 30
+    },
+    {
+      "x": 31,
+      "y": 492,
+      "width": 56,
+      "height": 22
+    },
+    {
+      "x": 647,
+      "y": 511,
+      "width": 168,
+      "height": 27
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+venv/
+**/venv/
+.venv
+
+logs/
+**logs/
+logs/mcp_server.log
+
+# use glob syntax.
+syntax: glob
+*.ser
+*.class
+*~
+*.bak
+#*.off
+*.old
+
+# eclipse conf file
+.settings
+.classpath
+.project
+.manager
+.scala_dependencies
+
+# idea
+.idea
+*.iml
+
+# building
+target
+build
+null
+tmp*
+temp*
+dist
+test-output
+build.log
+*.jar
+*.war
+*.ear
+
+#node
+node_modules
+
+coordinator/src/main/apps/coordinators/**/*.properties
+
+# switch to regexp syntax.
+syntax: regexp
+#  ^\.pc/
+
+.DS_Store
+
+
+#python related
+__pycache__
+
+# python virtual env
+venv
+
+# deployments
+target
+target/**
+target/**/*.jar
+
